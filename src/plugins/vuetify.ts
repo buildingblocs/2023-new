@@ -1,60 +1,38 @@
 /**
- * Vuetify3 Plugin
+ * plugins/vuetify.ts
+ *
+ * Framework documentation: https://vuetifyjs.com`
  */
-import 'vuetify/styles';
-import '@mdi/font/css/materialdesignicons.css';
 
-import { aliases, mdi } from 'vuetify/iconsets/mdi';
-import { createVuetify } from 'vuetify';
+// Styles
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
 
-// For test use. Do not include createVuetify()
-// see https://next.vuetifyjs.com/en/features/treeshaking/
-import * as components from 'vuetify/components';
-import * as directives from 'vuetify/directives';
+// Imports
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+import * as labs from 'vuetify/labs/components'
 
-// Translations provided by Vuetify
-import { en } from 'vuetify/locale';
-
-// Misc
-import { loadFonts } from './webfontloader';
-
-await loadFonts();
+// Icons
+import { fa } from 'vuetify/iconsets/fa'
+import { md } from 'vuetify/iconsets/md'
+import { mdi } from 'vuetify/iconsets/mdi'
+import { mdi as mdiSvg } from 'vuetify/iconsets/mdi-svg'
 
 export default createVuetify({
-  // Global configuration
-  // https://next.vuetifyjs.com/en/features/global-configuration/
-  /*
-  defaults: {
-    global: {
-      ripple: false,
-    },
-    VSheet: {
-      elevation: 4,
-    },
-  },
-  */
-  // Icon Fonts
-  // https://next.vuetifyjs.com/en/features/icon-fonts/
-  icons: {
-    defaultSet: 'mdi',
-    aliases,
-    sets: {
-      mdi,
-    },
-  },
-  // Internationalization (i18n)
-  // https://next.vuetifyjs.com/en/features/internationalization/#internationalization-i18n
-  locale: {
-    locale: 'en',
-    fallback: 'en',
-    messages: { en },
-  },
-  // Theme
-  // https://next.vuetifyjs.com/en/features/theme/
   theme: {
-    defaultTheme: 'light',
+    themes: {
+      light: {
+        colors: {
+          primary: '#1867C0',
+          secondary: '#5CBBF6',
+        },
+      },
+    },
   },
-});
-
-// Export for test.
-export { components, directives };
+  components: {
+    ...components, ...labs,
+  },
+  directives
+})

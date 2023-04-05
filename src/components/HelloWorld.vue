@@ -1,56 +1,18 @@
-<script setup lang="ts">
-import { createVuetify } from 'vuetify';
-import Meta from '@/Meta';
-
-const title = import.meta.env.VITE_APP_TITLE;
-
-/** Props */
-defineProps<{
-  msg: string;
-}>();
-</script>
-
 <template>
   <v-container class="fill-height">
     <v-responsive class="d-flex align-center text-center fill-height">
       <v-img
+        contain
+        height="300"
         src="@/assets/logo.svg"
-        alt="vuetify"
-        :width="256"
-        class="logo mx-auto"
       />
-      <h1 class="text-h2 font-weight-bold mb-3">
-        Welcome to the Vuetify
-        {{ 'v' + createVuetify.version }}
-      </h1>
-      <p>{{ msg }}</p>
-      <p class="text-medium-emphasis">
-        <a
-          href="https://github.com/logue/vite-vuetify-ts-starter"
-          target="_blank"
-        >
-          vite-vuetify-ts-starter
-        </a>
-        &nbsp;/&nbsp;Build:
-        <time
-          :datetime="Meta.date"
-          v-text="new Date(Meta.date).toLocaleString()"
-        />
-      </p>
-      <v-alert
-        v-if="!title"
-        variant="tonal"
-        density="compact"
-        type="warning"
-        class="my-3 w-75 mx-auto"
-      >
-        Please define
-        <code>VITE_APP_TITLE</code>
-        variable in to
-        <code>.env</code>
-        file.
-      </v-alert>
-      <div class="py-10" />
+
+      <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
+
+      <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+
+      <div class="py-14" />
+
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
           <v-btn
@@ -60,7 +22,11 @@ defineProps<{
             target="_blank"
             variant="text"
           >
-            <v-icon icon="mdi-view-dashboard" size="large" start />
+            <v-icon
+              icon="mdi-view-dashboard"
+              size="large"
+              start
+            />
 
             Components
           </v-btn>
@@ -76,7 +42,11 @@ defineProps<{
             target="_blank"
             variant="flat"
           >
-            <v-icon icon="mdi-speedometer" size="large" start />
+            <v-icon
+              icon="mdi-speedometer"
+              size="large"
+              start
+            />
 
             Get Started
           </v-btn>
@@ -90,7 +60,11 @@ defineProps<{
             target="_blank"
             variant="text"
           >
-            <v-icon icon="mdi-account-group" size="large" start />
+            <v-icon
+              icon="mdi-account-group"
+              size="large"
+              start
+            />
 
             Community
           </v-btn>
@@ -100,9 +74,6 @@ defineProps<{
   </v-container>
 </template>
 
-<style scoped>
-.logo:hover {
-  will-change: filter;
-  filter: drop-shadow(0 0 1em #2196f3aa);
-}
-</style>
+<script lang="ts" setup>
+  //
+</script>
