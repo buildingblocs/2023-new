@@ -1,69 +1,122 @@
 <template>
-  <v-container fluid class="onboarding fill-height">
-    <v-responsive class="d-flex">
-      <section :height="height" style="fill-height:100%;">
-      <div class="text-h2 font-weight-light mb-n1">Welcome to</div>
-      <h1 class="text-h1 font-weight-bold">arXiv.nush.</h1>
-      <div class="py-14" />
-
-      <div class="text-h4 mb-n1">Explore Research@NUSH like never before.</div>
-
-      <div class="py-14" />
-
-      <div class="align-center text-center fill-height">
-        <v-row class="d-flex align-center justify-center">
-
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            :href="appStore.loggedIn ? '/projects': '/'"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            target="_blank"
-            variant="flat"
-          >
-            <v-icon
-              icon="mdi-speedometer"
-              size="large"
-              start
-            />
-
-            Enter
-          </v-btn>
-        </v-col>
-      </v-row>
-
+  <section id="landing">
+    <div class="banner">
+      <div class="content">
+        <div class="name">BuildingBlocs 2023 is back!</div>
+        <div class="description">Singapore’s annual computing education <br> outreach programme</div>
+        <button @click="scrollDown"><a href="#info">Learn more</a></button>
       </div>
-      </section>
-
-    </v-responsive>
-  </v-container>
+    </div>
+  </section>
+  <section id="info">
+    <div class="text">
+      <div class="header">By students, for students</div>
+      <p>What people do at BuildingBlocs. What they learn. Who we are. Our mission/vision.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error facere nesciunt in, possimus sint rem nostrum
+        accusantium dolorem aperiam quia aut aliquid, itaque explicabo ratione consequatur adipisci.</p>
+    </div>
+    <div class="image">
+      <div class="img"></div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
-import {
-  ref,
-  type Ref,
-  computed
-} from 'vue';
-import { useAppStore } from '@/store/app';
-
-const appStore = useAppStore()
-
-const height = computed(() => window.innerHeight)
-const width = computed(() => window.innerWidth)
-
+const scrollDown = () => {
+  let pageHeight = window.innerHeight;
+  window.scrollBy(0, pageHeight);
+}
 </script>
 
 <style scoped>
-.onboarding {
-  background: url('/src/assets/books.jpg') no-repeat center center fixed !important;
-  background-size: cover;
-  /* background-image: url('/src/assets/books.jpg'); */
+.banner {
+  background-color: #787878;
   color: white;
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
+.banner .content .name {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+.banner .content .description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  margin-bottom: 35px;
+}
+
+.banner .content button {
+  background: #FFB546;
+  border-radius: 16px;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.banner .content button a {
+  text-decoration: none;
+  color: black;
+}
+
+#info {
+  height: 100vh;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: none;
+}
+
+#info .text {
+  width: 50%;
+  height: 100%;
+  margin: none;
+  padding-left: 5%;
+}
+
+#info .text .header {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 25%;
+}
+
+#info .text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+#info .image {
+  width: 50%;
+  height: 100%;
+}
+
+#info .image .img {
+  margin-top: 25%;
+  background-color:#D9D9D9;
+  width: 100%;
+  height: 50%;
+  margin-left: 10%;
+}
 </style>
