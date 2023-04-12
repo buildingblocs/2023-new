@@ -1,0 +1,1 @@
+<template><div class="about">Team page</div></template>

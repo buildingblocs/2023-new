@@ -1,0 +1,1 @@
+<template><div class="about">Partners page</div></template>
