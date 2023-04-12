@@ -2,10 +2,11 @@
 <v-app>
 
 
-  <v-navigation-drawer v-if="appStore.loggedIn" v-model="drawerShown" temporary app>
+  <v-navigation-drawer v-model="drawerShown" temporary app>
     <v-list dense nav>
       <v-list-item>
-        <h3>Welcome, {{ appStore.user?.name }}!</h3>
+        <!-- bruh idk how to correctly get the image sia  <v-img :src="require('@src/assets/logo.png')" ></v-img>-->
+        <h3 class="orangeicon">BuildingBlocs</h3>
       </v-list-item>
       <v-divider></v-divider>
       <v-list-item v-for="item in drawerRoutes" :to="item.path" @click="drawerShown = false"
@@ -18,13 +19,14 @@
     </v-list>
 </v-navigation-drawer>
 
-<v-app-bar app :color="'primary'" dark v-if="appStore.loggedIn">
+<v-app-bar app :color="'primary'" dark>
     <v-app-bar-nav-icon @click="drawerShown = !drawerShown"></v-app-bar-nav-icon>
     <v-toolbar-title>
-      arXiv.nush
-    </v-toolbar-title>
+      </v-toolbar-title> 
     <v-spacer></v-spacer>
-    <v-btn @click="appStore.logout()" v-if="appStore.loggedIn">Logout</v-btn>
+      <!-- bruh idk how to correctly get the image sia  <v-img :src="require('@src/assets/logo.png')" ></v-img>-->
+      <h3 style="padding-right: 20px;">BuildingBlocs</h3>
+      
   </v-app-bar>
 
   <v-main>
@@ -35,28 +37,15 @@
 
 <script lang="ts" setup>
 import {
-  computed,
-  nextTick,
-  onMounted,
   ref,
-  watch,
-  type ComputedRef,
   type Ref,
-  type WritableComputedRef,
 } from 'vue';
-import { useTheme } from 'vuetify/lib/framework.mjs';
 
-import router from "./router";
-
-import { useAppStore } from '@/store/app'
 
 
 
 
 /** Vuetify Theme */
-const theme = useTheme();
-
-const appStore = useAppStore();
 
 const drawerShown: Ref<boolean> = ref(false)
 
@@ -67,38 +56,34 @@ const drawerRoutes = [
     icon: "mdi-home",
   },
   {
-    name: "Dashboard",
-    path: "/projects",
-    icon: "mdi-file-table-box",
-  },
-  // {
-  //   name: "GitHub Tracker",
-  //   path: "/github",
-  //   icon: "mdi-github",
-  // },
-  // {
-  //   name: "SSEF Tracker",
-  //   path: "/ssef",
-  //   icon: "mdi-flask",
-  // },
-  {
-    name: "Profile",
-    path: `/students/${appStore.user == null ? "" : 'nush_sid' in appStore.user ? appStore.user?.nush_sid : appStore.user?.email}`,
-    icon: "mdi-account"
+    name: "About",
+    path: "/about",
+    icon: "mdi-information",
   },
   {
-    name: "Contact Us",
-    path: "/contact",
-    icon: "mdi-email"
+    name: "Events",
+    path: "/events",
+    icon: "mdi-calendar-multiple-check",
+  },
+  {
+    name: "Competitions",
+    path: `/competitions`,
+    icon: "mdi-trophy-variant"
+  },
+  {
+    name: "Our Team",
+    path: "/team",
+    icon: "mdi-account-group"
+  },
+  {
+    name: "Partners",
+    path: "/partners",
+    icon: "mdi-domain"
+  },
+  {
+    name: "Register",
+    path: "/Register",
+    icon: "mdi-account-plus"
   }
 ]
-
-
-const height: ComputedRef<number> = computed(
-  () => window.innerHeight
-);
-
-const width: ComputedRef<number> = computed(
-  () => window.innerWidth
-);
 </script>

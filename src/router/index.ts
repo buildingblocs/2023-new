@@ -12,25 +12,30 @@ const routes = [
         component: () => import('@/views/Home.vue'),
       },
       {
-        path: "/ssef",
-        name: 'SSEF',
-        component: () => import('@/views/SSEF.vue')
+        path: '/about',
+        name: 'About',
+        component: () => import('@/views/About.vue'),
       },
       {
-        path: "/projects",
-        name: 'Dashboard',
-        component: () => import('@/views/Dashboard.vue')
+        path: '/competitions',
+        name: 'Competitions',
+        component: () => import('@/views/Competitions.vue'),
       },
       {
-        path: "/projects/:id",
-        name: "Project View",
-        component: () => import('@/views/ProjectView.vue')
+        path: '/team',
+        name: 'Team',
+        component: () => import('@/views/Team.vue'),
       },
       {
-        path: "/students/:id",
-        name: "Student Profile",
-        component: () => import('@/views/StudentView.vue')
-      }
+        path: '/events',
+        name: 'Events',
+        component: () => import('@/views/Events.vue'),
+      },
+      {
+        path: '/partners',
+        name: 'Partners',
+        component: () => import('@/views/Partners.vue'),
+      },
     ],
   },
 ]

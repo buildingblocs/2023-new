@@ -1,0 +1,1 @@
+<template><div class="about">Events page</div></template>

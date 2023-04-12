@@ -8,7 +8,7 @@
       </div>
     </div>
   </section>
-  <section id="info">
+  <section id="about">
     <div class="text">
       <div class="header">By students, for students</div>
       <p>What people do at BuildingBlocs. What they learn. Who we are. Our mission/vision.
@@ -71,25 +71,25 @@ const scrollDown = () => {
   color: black;
 }
 
-#info {
+#about {
   height: 100vh;
 }
 
-#info {
+#about {
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: none;
 }
 
-#info .text {
+#about .text {
   width: 50%;
   height: 100%;
   margin: none;
   padding-left: 5%;
 }
 
-#info .text .header {
+#about .text .header {
   font-size: 40px;
   font-weight: 800;
   line-height: 52px;
@@ -99,7 +99,7 @@ const scrollDown = () => {
   margin-top: 25%;
 }
 
-#info .text p {
+#about .text p {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -107,16 +107,41 @@ const scrollDown = () => {
   text-align: left;
 }
 
-#info .image {
+#about .image {
   width: 50%;
   height: 100%;
 }
 
-#info .image .img {
+#about .image .img {
   margin-top: 25%;
   background-color:#D9D9D9;
   width: 100%;
   height: 50%;
   margin-left: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #about {
+    flex-direction: column;
+  }
+
+  #about .text {
+    width: 100%;
+    height: 50%;
+  }
+
+  #about .image {
+    width: 100%;
+    height: 50%;
+  }
+
+  #about .image .img {
+    margin-top: 0%;
+    background-color:#D9D9D9;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+  }
 }
 </style>

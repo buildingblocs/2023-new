@@ -7,7 +7,6 @@
 // Plugins
 import { loadFonts } from './webfontloader'
 import vuetify from './vuetify'
-import pinia from '../store'
 import router from '../router'
 
 // Types
@@ -28,7 +27,6 @@ export function registerPlugins (app: App) {
   app
     .use(vuetify)
     .use(router)
-    .use(pinia)
     .use(FileSelector)
     // .use(mavonEditor)
 }
