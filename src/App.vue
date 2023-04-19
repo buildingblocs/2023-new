@@ -9,7 +9,7 @@
         <h3 class="orangeicon">BuildingBloCS</h3>
       </v-list-item>
       <v-divider></v-divider>
-      <v-list-item v-for="item in drawerRoutes" :to="item.path" @click="drawerShown = false"
+      <v-list-item v-for="item in drawerRoutes" :href="item.path" @click="drawerShown = false"
                     style="text-decoration: none; color: inherit;" :key="item.name">
         <template v-slot:prepend>
             <v-icon :icon="item.icon"></v-icon>
@@ -49,7 +49,7 @@
                     Singapore's annual computing education <br> outreach programme
                 </span>
             </v-toolbar-title>
-            <button @click="router.push('/home')" style=" background: #FFB546; border-radius: 16px;
+            <button href="/home" style=" background: #FFB546; border-radius: 16px;
   padding: 10px 24px; margin-top: 30px;
   font-size: 20px;
   font-weight: 600;
