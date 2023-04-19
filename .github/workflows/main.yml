@@ -11,5 +11,5 @@ jobs:
       with:
         username: 'buildingblocs'
         reponame: '2023-new'
-        cname: 'https://new.buildingblocs.sg/'
+        cname: 'new.buildingblocs.sg'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
