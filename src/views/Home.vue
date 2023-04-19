@@ -1,24 +1,4 @@
 <template>
-
-  <!-- <section id="landing" :style="`background:#333 url('/src/assets/gallery/${imageNum}') center center/cover no-repeat fixed !important;`">
-    <div class="banner">
-      <div class="content">
-        <div class="name">{{ titleName }} 2023 is back!</div>
-        <div class="description" v-if="screenWidth > 560">Singapore's annual computing education <br> outreach programme</div>
-        <button @click="scrollDown">Learn more</button>
-      </div>
-    </div>
-  </section>
-  <section style="padding-top: 40px;" ref="page0">
-    <v-row class="text-center justify-center align-center">
-    <v-col cols="12" md="8">Mission Statement
-      <div class="pa-8 ma-4 text-h4" style="background-color: rgba(255, 181, 70, 0.4); border-radius: 30px;">
-        BuildingBloCS is a <strong>year-long</strong> outreach programme for students, by students, aimed at promoting more exposure to Computing and CS as a whole to Secondary School, JC and IP students.
-      </div>
-
-    </v-col>
-    </v-row>
-  </section> -->
   <section style="padding-top: 40px;" ref="page0">
     <v-row class="text-center justify-center align-center">
     <v-col cols="12" md="8">Mission Statement
@@ -185,18 +165,12 @@ const screenWidth = computed(() => window.innerWidth)
 
 const page0: Ref<HTMLElement | null> = ref(null)
 
-
-const titleName = computed(() => (screenWidth.value > 720) ? 'BuildingBloCS' : 'BBCS')
-
 onMounted(() => {
   setInterval(() => {
     imageNum.value = imageNums[(imageNums.indexOf(imageNum.value)+1) % imageNums.length];
   }, 5000)
 })
 
-const scrollDown = () => {
-  page0.value?.scrollIntoView()
-}
 </script>
 
 <style scoped>
