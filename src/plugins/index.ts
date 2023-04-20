@@ -20,6 +20,8 @@ import 'vue-file-selector/dist/main.css';
 // import the FileSelector plugin
 import FileSelector from 'vue-file-selector';
 
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
 
 
 export function registerPlugins (app: App) {
@@ -28,5 +30,6 @@ export function registerPlugins (app: App) {
     .use(vuetify)
     .use(router)
     .use(FileSelector)
+    .use(VCalendar)
     // .use(mavonEditor)
 }

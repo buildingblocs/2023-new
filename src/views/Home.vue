@@ -1,4 +1,6 @@
 <template>
+  <transition :name="'slide-fade'">
+    <v-container fluid>
   <section style="padding-top: 40px;" ref="page0">
     <v-row class="text-center justify-center align-center">
     <v-col cols="12" md="8">Mission Statement
@@ -13,7 +15,7 @@
   <section>
     <v-row>
       <v-col cols="12" sm="7">
-        <div class="pa-4 ma-4">
+        <div class="pa-4 ma-4" width="100%">
           <h1 style="font-size: 40px;">By students, for students.</h1><br>
           <p style="font-size: 24px;">
             BuildingBloCS is the <strong>largest</strong> nationwide “By Student, For Student” Computing Advocacy Program, aimed at teaching students the way of the coder 💻.
@@ -22,7 +24,7 @@
         </div>
       </v-col>
       <v-col cols="12" sm="5">
-        <v-img src="/src/assets/scrolling/img1.png" style="margin-left: 10%;"></v-img>
+        <v-img src="/src/assets/scrolling/img1.png"></v-img>
       </v-col>
     </v-row>
   </section>
@@ -47,7 +49,7 @@
 <section>
   <v-row>
     <v-col cols="12" sm="7">
-      <div class="pa-4 ma-4">
+      <div class="pa-4 ma-4" width="100%">
         <h1 style="font-size: 40px;">Passionate Speakers.</h1><br>
         <p style="font-size: 24px;">
           We give opportunities to various speakers to talk about their work and interests, and we don't shy away from getting into the nitty-gritty.
@@ -56,7 +58,7 @@
       </div>
     </v-col>
     <v-col cols="12" sm="5">
-      <v-img src="/src/assets/scrolling/img3.jpg" style="margin-left: 10%;"></v-img>
+      <v-img src="/src/assets/scrolling/img3.jpg"></v-img>
     </v-col>
   </v-row>
 </section>
@@ -77,9 +79,9 @@
     </v-col>
   </v-row>
 </section>
-<section id="timeline" class="pa-8 ma-8">
+<section id="timeline" class="pa-8 ma-8" style="padding-bottom:0px;">
   <h1 style="font-size: 50px" class="text-left">Our History</h1><br>
-<v-timeline align="start" style="margin-bottom: 10%;">
+<v-timeline align="start">
     <v-timeline-item icon="mdi-lightbulb" fill-dot dot-color="red-lighten-2">
       <template v-slot:opposite>
         <strong class="text-h4">2017</strong>
@@ -129,10 +131,10 @@
 
 
 
-<section style="padding-top: 80px;">
+<section>
   <v-row>
     <v-col cols="12" sm="7">
-      <div class="pa-4" align="left" justify="left" style="margin-left: 80px; margin-right: 80px; margin-top: 40px;">
+      <div class="pa-4" align="left" justify="left" style="margin-left: 80px; margin-right: 80px" width="100%">
         <h1 style="font-size: 50px;">Join Us</h1><br>
         <p style="font-size: 30px;">
           for the June Conference to learn coding, the best way.
@@ -145,11 +147,12 @@
       </div>
     </v-col>
     <v-col cols="12" sm="5">
-      <v-img src="/src/assets/scrolling/img5.jpg" style="margin-left: 10%;"></v-img>
+      <v-img src="/src/assets/scrolling/img5.jpg"></v-img>
     </v-col>
   </v-row>
 </section>
-
+</v-container>
+  </transition>
 
 </template>
 
@@ -176,17 +179,12 @@ onMounted(() => {
 <style scoped>
 
 section {
-  height: 70vh;
+  min-height: 70vh;
   text-align: center;
 }
 
-section#landing {
-  height: 100vh;
-  width: 100vw;
-}
-
 section#timeline {
-  height: 140vh;
+  min-height: 140vh;
 }
 
 .banner {

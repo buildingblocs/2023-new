@@ -40,4 +40,10 @@ const router = createRouter({
   routes,
 })
 
+router.afterEach((to, from) => {
+  const toPath = to.path
+  const fromPath = from.path
+  to.meta.transition = (toPath ===  '/' && fromPath === '/') ? 'slide-up' : ''
+})
+
 export default router

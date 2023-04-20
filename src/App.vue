@@ -73,7 +73,12 @@
 </v-app-bar>
 
   <v-main v-if="route.path != '/'">
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <!-- Use any custom transition and  to `fade` -->
+      <transition :name="(route.meta.transition as string) || 'slide-right'">
+        <component :is="Component"  :key="route.path" />
+      </transition>
+    </router-view>
   </v-main>
 </v-app>
 </template>
@@ -134,3 +139,15 @@ const drawerRoutes = [
   // }
 ]
 </script>
+<style>
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
+}
+</style>
