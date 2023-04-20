@@ -109,7 +109,7 @@ const organisers = [
       "QA",
       "WS"
     ],
-    "level": "Poly 1",
+    "level": "Poly 2",
     "github": "idkSeth",
     "img": "ppl/seth.jpeg"
   },
