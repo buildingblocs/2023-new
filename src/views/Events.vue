@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12" sm="4">
-        <VCalendar :attributes='attrs' />
+        <!-- <VCalendar :attributes='attrs' /> -->
       </v-col>
     </v-row>
 
