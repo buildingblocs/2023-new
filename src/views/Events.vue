@@ -1,12 +1,46 @@
 <template>
-  <v-container fluid>
+  <transition :name="'slide-fade'">
+    <v-container fluid>
+  <section style="padding-top: 40px;" ref="page0">
+    <v-row class="text-center justify-center align-center">
+    <v-col cols="12" md="8">
+      <div class="pa-8 ma-4 text-h4" style="background-color: rgba(255, 181, 70, 0.4); border-radius: 30px;">
+        Our Events  
+      </div>
+
+    </v-col>
+    </v-row>
+  </section>
+
+  <section>
+    <v-row>
+      <v-col cols="12" sm="7">
+        <div class="pa-4 ma-4" width="100%">
+          <h6 style="font-size: 20px; font-family:'Courier New'">12-13 March 2023</h6>
+          <h1 style="font-size: 35px;">March Conference</h1><br>
+          <p style="font-size: 20px;">
+            blablabla
+          </p>
+        </div>
+      </v-col>
+      <v-col cols="12" sm="5">
+        <br><br>insert pic here
+        <v-img src="___"></v-img>
+      </v-col>
+    </v-row>
+  </section>
+  
+  
+  
+  
+  <!-- <v-container fluid>
     <v-row>
       <v-col cols="12" sm="4">
         <!-- <VCalendar :attributes='attrs' /> -->
       </v-col>
     </v-row>
 
-  </v-container>
+  </v-container> -->
 
 </template>
 <script lang="ts" setup>
