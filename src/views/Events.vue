@@ -5,7 +5,7 @@
     <v-row class="text-center justify-center align-center">
     <v-col cols="12" md="8">
       <div class="pa-8 ma-4 text-h4" style="background-color: rgba(255, 181, 70, 0.4); border-radius: 30px;">
-        Our Events  
+        Our Events
       </div>
 
     </v-col>
@@ -19,7 +19,7 @@
           <h6 style="font-size: 20px; font-family:'Courier New'">12-13 March 2023</h6>
           <h1 style="font-size: 35px;">March Conference</h1><br>
           <p style="font-size: 20px;">
-            The March Conference aims to foster an interest in programming by featuring three beginner-level workshops on Python, Data Analytics, and HTML, CSS and Javascript. 
+            The March Conference aims to foster an interest in programming by featuring three beginner-level workshops on Python, Data Analytics, and HTML, CSS and Javascript.
             To put our participants' learning to the test, we have the "Starvation" challenge, our very own open-source hackathon that sums up the conference!
           </p>
         </div>
@@ -98,7 +98,7 @@
     <v-row align="center" justify="start">
         <v-col :align="'center'" justify="center">
             <v-toolbar-title class="text-wrap" :style="{color: 'black'}">
-                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>{{ titleName }} Join us at our next event!</v-card-title><br>
+                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>Join us at our next event!</v-card-title><br>
                 <span class="text-wrap">
                     If you're a secondary school or pre-university student interested in Computing, this is for you!
                 </span>
@@ -124,8 +124,8 @@
     <v-row align="center" justify="start">
         <v-col :align="'center'" justify="center">
             <v-toolbar-title class="text-wrap" :style="{color: 'black'}">
-                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>{{ titleName }} Organising Schools</v-card-title><br>
-                
+                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>Organising Schools</v-card-title><br>
+
             </v-toolbar-title>
             <button @click="router.push('/team')" style=" background: #FFB546; border-radius: 16px;
   padding: 10px 24px; margin-top: 30px;
@@ -148,8 +148,8 @@
     <v-row align="center" justify="start">
         <v-col :align="'center'" justify="center">
             <v-toolbar-title class="text-wrap" :style="{color: 'black'}">
-                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>{{ titleName }} Our Partners</v-card-title><br>
-                
+                <v-card-title style="font-size: 50px; line-height: 1.5cm;" class='text-wrap'>Our Partners</v-card-title><br>
+
             </v-toolbar-title>
         </v-col>
     </v-row>
@@ -162,7 +162,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import router from '/src/router';
+import router from '@/router';
 
 const attrs = ref([
   {
