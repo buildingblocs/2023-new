@@ -5,7 +5,7 @@
     <v-row class="text-center justify-center align-center">
     <v-col cols="12" md="8">
       <div class="pa-8 ma-4 text-h4" style="background-color: rgba(255, 181, 70, 0.4); border-radius: 30px;">
-        Our Events  
+        Our Events
       </div>
 
     </v-col>
@@ -29,14 +29,16 @@
       </v-col>
     </v-row>
   </section>
-  
-  
-  
-  
+  </v-container>
+  </transition>
+
+
+
+
   <!-- <v-container fluid>
     <v-row>
       <v-col cols="12" sm="4">
-        <!-- <VCalendar :attributes='attrs' /> -->
+         <VCalendar :attributes='attrs' />
       </v-col>
     </v-row>
 
