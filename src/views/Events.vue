@@ -25,7 +25,7 @@
       </v-col>
       <v-col cols="12" sm="5">
         <br><br>insert pic here
-        <v-img src="___"></v-img>
+        <v-img src=""></v-img>
       </v-col>
     </v-row>
   </section>
