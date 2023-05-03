@@ -33,7 +33,7 @@
       </v-col>
       <v-col cols="12" sm="5">
         <br><br>
-        <p style="text-align: center;"><v-img src="/src/assets/scrolling/img6.png"></v-img></p>
+        <p style="text-align: center;"><v-img src="/assets/scrolling/img6.png"></v-img></p>
       </v-col>
     </v-row>
   </section>
@@ -42,7 +42,7 @@
     <v-row>
       <v-col cols="12" sm="5">
         <br><br>
-        <p style="text-align: center;"><v-img src="/src/assets/scrolling/img7.png"></v-img></p>
+        <p style="text-align: center;"><v-img src="/assets/scrolling/img7.png"></v-img></p>
       </v-col>
       <v-col cols="12" sm="7">
         <div class="pa-4 ma-4" width="100%">
@@ -84,7 +84,7 @@
       </v-col>
       <v-col cols="12" sm="5">
         <br><br>
-        <p style="text-align: center;"><v-img src="/src/assets/scrolling/img8.png"></v-img></p>
+        <p style="text-align: center;"><v-img src="/assets/scrolling/img8.png"></v-img></p>
       </v-col>
     </v-row>
   </section>

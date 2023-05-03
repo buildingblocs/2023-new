@@ -18,7 +18,7 @@
       <v-card height="100%" class="card justify-center align-center text-center">
         <div class="cover"></div>
         <div class="card-img-wrapper">
-            <img :src="`/src/assets/${oic.img}`" width="400px" />
+            <img :src="`/assets/${oic.img}`" width="400px" />
         </div>
         <h1 class="card-title">{{ oic.name }}</h1>
         <p class="card-desc">{{ oic.bio }}</p>
@@ -42,7 +42,7 @@
       <v-card height="100%" class="card justify-center align-center text-center">
         <div class="cover"></div>
         <div class="card-img-wrapper">
-            <img :src="`/src/assets/${organiser.img}`" width="400px" />
+            <img :src="`/assets/${organiser.img}`" width="400px" />
         </div>
         <h1 class="card-title">{{ organiser.name }}</h1>
         <p class="card-desc">{{ organiser.bio }}</p>

@@ -5,7 +5,6 @@
   <v-navigation-drawer v-model="drawerShown" temporary app>
     <v-list dense nav>
       <v-list-item>
-        <!-- bruh idk how to correctly get the image sia  <v-img :src="require('@src/assets/logo.png')" ></v-img>-->
         <h3 class="orangeicon">BuildingBloCS</h3>
       </v-list-item>
       <v-divider></v-divider>
@@ -29,10 +28,10 @@
 
 <v-toolbar v-if="route.path == '/'" fixed prominent
       extended
-      :extension-height="screenHeight" :color="'primary'" image="/src/assets/gallery/img2.jpg">
+      :extension-height="screenHeight" :color="'primary'" image="/assets/gallery/img2.jpg">
     <!-- <v-app-bar-nav-icon @click="drawerShown = !drawerShown"></v-app-bar-nav-icon> -->
   <v-avatar v-ripple elevation="10" style="padding: 5px; margin:10px; background-color: #fff; width: 60px; height: 60px; margin-top: 20px;">
-    <v-img src="/src/assets/logo.png" aspect-ratio="1/1"  @click="drawerShown = !drawerShown"></v-img>
+    <v-img src="/assets/logo.png" aspect-ratio="1/1"  @click="drawerShown = !drawerShown"></v-img>
   </v-avatar>
 
   <template v-slot:extension>
@@ -68,7 +67,7 @@
 
 <v-app-bar app v-else collapse extended :extension-height="20" style="width: 90px; background-color: #FFB546;">
   <v-avatar v-ripple elevation="10" style="padding: 5px; margin:10px; background-color: #fff; width: 60px; height: 60px; margin-top: 20px;">
-    <v-img src="/src/assets/logo.png" aspect-ratio="1/1"  @click="drawerShown = !drawerShown"></v-img>
+    <v-img src="/assets/logo.png" aspect-ratio="1/1"  @click="drawerShown = !drawerShown"></v-img>
   </v-avatar>
 </v-app-bar>
 

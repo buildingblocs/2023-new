@@ -24,7 +24,7 @@
         </div>
       </v-col>
       <v-col cols="12" sm="5">
-        <v-img src="/src/assets/scrolling/img1.png"></v-img>
+        <v-img src="/assets/scrolling/img1.png"></v-img>
       </v-col>
     </v-row>
   </section>
@@ -32,7 +32,7 @@
   <section>
     <v-row>
       <v-col cols="12" sm="5">
-        <v-img src="/src/assets/scrolling/img4.png"></v-img>
+        <v-img src="/assets/scrolling/img4.png"></v-img>
       </v-col>
       <v-col cols="12" sm="7">
         <div class="pa-4 ma-4" width="100%">
@@ -58,7 +58,7 @@
       </div>
     </v-col>
     <v-col cols="12" sm="5">
-      <v-img src="/src/assets/scrolling/img3.jpg"></v-img>
+      <v-img src="/assets/scrolling/img3.jpg"></v-img>
     </v-col>
   </v-row>
 </section>
@@ -66,7 +66,7 @@
 <section>
   <v-row>
     <v-col cols="12" sm="5">
-      <v-img src="/src/assets/scrolling/img2.jpg"></v-img>
+      <v-img src="/assets/scrolling/img2.jpg"></v-img>
     </v-col>
     <v-col cols="12" sm="7">
       <div class="pa-4 ma-4" width="100%">
@@ -147,7 +147,7 @@
       </div>
     </v-col>
     <v-col cols="12" sm="5">
-      <v-img src="/src/assets/scrolling/img5.jpg"></v-img>
+      <v-img src="/assets/scrolling/img5.jpg"></v-img>
     </v-col>
   </v-row>
 </section>
