@@ -28,7 +28,7 @@
 
 <v-toolbar v-if="route.path == '/'" fixed prominent
       extended
-      :extension-height="screenHeight" :color="'primary'" image="/assets/gallery/img2.jpg">
+      :extension-height="screenHeight" :color="'primary'" :image="currentImage">
     <!-- <v-app-bar-nav-icon @click="drawerShown = !drawerShown"></v-app-bar-nav-icon> -->
   <v-avatar v-ripple elevation="10" style="padding: 5px; margin:10px; background-color: #fff; width: 60px; height: 60px; margin-top: 20px;">
     <v-img src="/assets/logo.png" aspect-ratio="1/1"  @click="drawerShown = !drawerShown"></v-img>
@@ -55,6 +55,12 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;">Learn more</button>
+        <v-slider style="width: 20%; margin-top:30px"
+          v-model="sliderValue"
+          step="1" color="#FFB546"  ticks="always"
+          min="0"
+          max="4"
+        ></v-slider>
         </v-col>
     </v-row>
   </v-container>
@@ -85,10 +91,11 @@
 <script lang="ts" setup>
 import {
   ref,
-  type Ref, computed
+  type Ref, computed, watch, onMounted
 } from 'vue';
 import { useRoute } from 'vue-router';
 import router from './router';
+import { clearInterval } from 'timers';
 
 const route = useRoute()
 
@@ -98,7 +105,28 @@ const screenHeight = computed(() => window.innerHeight)
 const titleName = computed(() => (screenWidth.value > 720) ? 'BuildingBloCS' : 'BBCS')
 
 
+const images = [
+  "/assets/gallery/img2.jpg",
+  "/assets/gallery/img3.png",
+  "/assets/gallery/img4.png",
+  "/assets/gallery/img5.jpg",
+  "/assets/gallery/img6.jpg"
+]
 
+const currentImage = ref(images[0])
+
+const sliderValue = ref(0)
+
+const timerInterval: Ref<ReturnType<typeof setInterval> | null> = ref(null)
+
+watch(sliderValue, (oldImage, newImage) => {
+  currentImage.value = images[newImage % images.length]
+  // if(timerInterval.value != null) clearInterval(timerInterval.value)
+  // setInterval(() => {
+  //   sliderValue.value = (images.indexOf(currentImage.value)+1)%(images.length)
+  //   currentImage.value = images[sliderValue.value]
+  // }, 5000);
+})
 
 
 /** Vuetify Theme */
@@ -137,8 +165,28 @@ const drawerRoutes = [
   //   icon: "mdi-account-plus"
   // }
 ]
+
+onMounted(() => {
+  timerInterval.value = setInterval(() => {
+    sliderValue.value = (images.indexOf(currentImage.value)+1)%(images.length)
+    currentImage.value = images[sliderValue.value]
+  }, 5000);
+})
 </script>
 <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slide-fade-enter-active {
   transition: all .3s ease;
 }
