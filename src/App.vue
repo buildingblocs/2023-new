@@ -95,7 +95,6 @@ import {
 } from 'vue';
 import { useRoute } from 'vue-router';
 import router from './router';
-import { clearInterval } from 'timers';
 
 const route = useRoute()
 
@@ -167,10 +166,10 @@ const drawerRoutes = [
 ]
 
 onMounted(() => {
-  timerInterval.value = setInterval(() => {
-    sliderValue.value = (images.indexOf(currentImage.value)+1)%(images.length)
-    currentImage.value = images[sliderValue.value]
-  }, 5000);
+  // timerInterval.value = setInterval(() => {
+  //   sliderValue.value = (images.indexOf(currentImage.value)+1)%(images.length)
+  //   currentImage.value = images[sliderValue.value]
+  // }, 5000);
 })
 </script>
 <style>
