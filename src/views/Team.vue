@@ -1180,7 +1180,7 @@ const organisers = [
   //   "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
   // },
 
-].sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
+]//.sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
 
 </script>
 <style scoped>
