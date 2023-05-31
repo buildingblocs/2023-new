@@ -185,6 +185,35 @@
       </v-card>
     </v-col>
 
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
+        <h2 style="font-size: 40px;">Our Workshop Speakers</h2>
+        <p style="font-size: 20px;">BuildingBloCS 2023 boasts a wide variety of speakers from various unique and different backgrounds, all united in the singular goal of spreading knowledge on various different disciplines.</p>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in ws" :key="organiser.name">
+      <v-card height="100%" width="90%" class="card justify-center align-center text-center">
+        <div class="cover text-right">
+          <v-chip-group>
+            <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-for="conf in organiser.conf" :key="conf">{{ conf }}</v-chip> -->
+          </v-chip-group>
+
+        </div>
+        <div class="card-img-wrapper">
+            <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
+        </div>
+        <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
+        <p class="card-desc">{{ organiser.bio }}</p>
+        <div class="card-footer">
+            <div class="footer-box">
+                <div class="box-wrapper" v-for="conf in organiser.conf" :key="conf">
+                    <div class="count">{{ conf }}</div>
+                </div>
+            </div>
+        </div>
+      </v-card>
+    </v-col>
+
     <!-- <v-col cols="12" sm="6" md="4" v-for="organiser in organisers" :key="organiser.name">
       <v-card height="100%" class="card justify-center align-center text-center">
         <div class="cover"></div>
@@ -826,22 +855,50 @@ const dev = [
   }
 ]
 
-
-const organisers = [
+const ws = [
   {
-    "name": "Elston Tan",
-    "school": "SP",
-    "github": "Elstuhn",
-    "level": "Poly 2",
-    "img": "ppl/elston.jpg",
-    "bio": "Hello, I'm Elston. I love learning and playing around with AI, my favourite game is Sekiro."
+    "name": "Zayan Karimi",
+    "school": "NUSH",
+    "github": "waffleSheep",
+    "level": "JC2",
+    "img": "ppl/zayan.jpg",
+    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail.",
+    "conf": ["March", "FOSS", "June"]
   },
   {
-    "name": "Mayukh Das",
-    "school": "NUSH",
-    "github": "jeffilluminati",
+    "name": "Jessie Chin Kit Hey",
+    "school": "HCI",
+    "github": "jcc-kh",
     "level": "JC2",
-    "img": "ppl/mayukh.jpg"
+    "img": "ppl/jessie.jpg",
+    "conf": ["March"]
+  },
+  {
+    "name": "Khoo Kai Wen",
+    "school": "NUSH",
+    "github": "deadly-nightshade",
+    "level": "JC1",
+    "img": "ppl/kaiwen.jpg",
+    "bio": "Hi, I'm a JC1 Student at NUSH",
+    "conf": ["March", "FOSS", "June"]
+  },
+  {
+    "name": "Ma Jinghong",
+    "school": "HCI",
+    "github": "",
+    "level": "JC2",
+    "img": "ppl/jinghong.jpg",
+    "bio": "I am a J2 student from HCI, and take PCME. I hope to help out for this event and learn relevant skills :)",
+    "conf": ["March", "FOSS", "June"]
+  },
+  {
+    "name": "Ishneet Singh",
+    "school": "TJC",
+    "github": "Ishneet0710",
+    "level": "JC2",
+    "img": "ppl/ishneet.jpg",
+    "bio": "Hi, I'm Ishneet, a JC2 student from TJC.",
+    "conf": ["March", "June"]
   },
   {
     "name": "Ian Goh",
@@ -849,37 +906,247 @@ const organisers = [
     "github": "TheRoundRoads",
     "level": "JC2",
     "img": "ppl/ian.jpg",
-    "bio": "Hi I'm Ian Goh! I'm currently a JC2 computing student studying in DHS. I also enjoy watching anime!"
+    "bio": "Hi I'm Ian Goh! I'm currently a JC2 computing student studying in DHS. I also enjoy watching anime!",
+    "conf": ["March"]
   },
   {
-    "name": "Heng Yi Wang",
-    "school": "DHS",
-    "github": "dhshengyiwang",
-    "level": "JC2",
-    "img": "ppl/yiwang.jpg",
-    "bio": "I am a JC2 student studying at Dunman High School. My favourite field in Computer Science is Artificial Intelligence."
+    "name": "Eugene Ang",
+    "school": "TJC",
+    "github": "python-noob-dotcom",
+    "level": "JC1",
+    "img": "ppl/eugeneang.jpg",
+    "bio": "Hi, I'm Eugene and i believe that caffeine is a miracle drug",
+    "conf": ["FOSS", "June"]
+  },
+  {
+    "name": "Dhanvine Rameshkumar",
+    "school": "TJC",
+    "level": "Sec 4",
+    "github": "Dhanvine321",
+    "img": "ppl/dhanvine.jpg",
+    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!",
+    "conf": ["FOSS", "June"]
+  },
+  {
+    "name": "Elston Tan",
+    "school": "SP",
+    "github": "Elstuhn",
+    "level": "Poly 2",
+    "img": "ppl/elston.jpg",
+    "bio": "Hello, I'm Elston. I love learning and playing around with AI, my favourite game is Sekiro.",
+    "conf": ["FOSS"]
   },
   {
     "name": "Joey Tang",
     "school": "HCI",
     "github": "fishjojo1",
     "level": "JC2",
-    "img": "ppl/joeytang.jpeg"
+    "img": "ppl/joeytang.jpeg",
+    "conf": ["FOSS"]
   },
   {
-    "name": "Isaac Yeap Sheng Rong",
-    "school": "HCI",
-    "github": "iysr",
+    "name": "Yap Yuan Xi",
+    "school": "NUSH",
+    "github": "Haloen",
     "level": "JC2",
-    "img": "ppl/isaacyeap.jpeg"
+    "img": "ppl/yuanxi.jpg",
+    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
+    "conf": ["FOSS", "June", "September"]
   },
   {
-    "name": "Jessie Chin Kit Hey",
-    "school": "HCI",
-    "github": "jcc-kh",
+    "name": "Ashwin Lokesh",
+    "school": "YIJC",
+    "github": "electron13",
     "level": "JC2",
-    "img": "ppl/jessie.jpg"
+    "img": "ppl/ashwin.jpg",
+    "bio": "I am Ashwin.",
+    "conf": ["FOSS", "June"]
   },
+  {
+    "name": "Kabir Jain",
+    "school": "NUSH",
+    "github": "ka-bear",
+    "level": "JC1",
+    "img": "ppl/kabir.png",
+    "bio": "Hi I'm Kabir, a JC1 student from NUSH. I love Physics, and especially AI.",
+    "conf": ["FOSS"]
+  },
+  {
+    "name": "Mahir Shah",
+    "school": "NUSH",
+    "github": "RottenLemons",
+    "level": "JC1",
+    "img": "ppl/mahir.png",
+    "bio": "NUSH student who likes CTFs, AI and C++. Games and dies in Physics sometimes.",
+    "conf": ["FOSS", "June"]
+  },
+  {
+    "name": "Jed Lim",
+    "school": "NUSH",
+    "github": "jedlimlx",
+    "level": "JC2",
+    "img": "ppl/jed.png",
+    "bio": "Hi I'm Jed, a JC2 student from NUSH who is passionate about AI and Physics (particularly Fluid Dynamics).",
+    "conf": ["FOSS", "June"]
+  },
+  {
+    "name": "James Tan Dejun",
+    "school": "RVHS",
+    "level": "JC2",
+    "img": "ppl/",
+    "github": "Dragonslayer262",
+    "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning.",
+    "conf": ["June"]
+  },
+  {
+    "name": "Edwin Liew",
+    "school": "ACJC",
+    "github": "edwinlmy5",
+    "level": "JC2",
+    "img": "ppl/Edwin_Liew.jpg",
+    "bio": "My name is Edwin and I'm one of the project managers for ACJC's Technology Council",
+    "conf": ["June"]
+  },
+  {
+    "name": "Wayne Ang",
+    "school": "ACJC",
+    "github": "Zernier",
+    "level": "JC2",
+    "img": "ppl/Wayne_Ang.JPG",
+    "bio": "I am a JC2 from ACJC currently. I like reading books, listening to new music and playing the guitar.",
+    "conf": ["June"]
+  },
+  {
+    "name": "Seth Olav Yong",
+    "school": "SP",
+    "github": "idkSeth",
+    "level": "Poly 2",
+    "img": "ppl/seth.jpeg",
+    "bio": "Hi, I'm Seth, a Poly 2 student from SP.",
+    "conf": ["June"]
+  },
+  {
+    "name": "Du Yuhan",
+    "school": "MGS",
+    "github": "TwelvePenguins",
+    "level": "Year 4",
+    "img": "ppl/duyuhan.jpeg",
+    "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer.",
+    "conf": ["June", "September"]
+  },
+  {
+    "name": "Ma Weiyi",
+    "school": "DHS",
+    "github": "fwyr",
+    "level": "Year 4",
+    "img": "ppl/maweiyi.jpeg",
+    "bio": "Hello! I'm Weiyi, a DHS student who just happens to like computers.",
+    "conf": ["June"]
+  },
+  {
+    "name": "Saw Ze Dong",
+    "school": "DHS",
+    "github": "sawzedong",
+    "level": "JC1",
+    "img": "ppl/sawzedong.jpeg",
+    "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more",
+    "conf": ["June", "September"]
+  },
+  {
+    "name": "Cheong Jun Kai Harry",
+    "school": "DHS",
+    "github": "Harry-cheong",
+    "level": "JC1",
+    "img": "ppl/harry.jpg",
+    "bio": "I'm Harry. I love tinkering with tech. I love card throwing.",
+    "conf": ["June", "September"]
+  },
+  {
+    "name": "Oon Zheng Kang",
+    "school": "DHS",
+    "github": "ozk100",
+    "level": "JC1",
+    "img": "ppl/Oon_Zheng_Kang.jpg",
+    "comms": [
+      "HR"
+    ],
+    "bio": "Hi, I'm Zheng Kang, a JC1 student from DHS.",
+    "conf": ["September"]
+  },
+  {
+    "name": "Chee Justin Suwattana",
+    "school": "DHS",
+    "github": "Giganaer",
+    "level": "JC1",
+    "img": "ppl/Chee_Justin.jpg",
+    "bio": "Hi I'm Justin, a JC1 computing student in DHS who also likes playing guitar",
+    "conf": ["September"]
+  },
+  {
+    "name": "Liu Wenkai",
+    "school": "NUSH",
+    "github": "squi-ddy",
+    "level": "JC1",
+    "img": "ppl/wenkai.jpg",
+    "bio": "Hi, I'm Wenkai, a JC1 student from NUSH.",
+    "conf": ["September"]
+  },
+  {
+    "name": "Cervon Wong",
+    "school": "NUSH",
+    "github": "cervonwong",
+    "level": "JC2",
+    "img": "ppl/cervon.jpg",
+    "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
+    "conf": ["September"]
+  },
+  {
+    "name": "Mayukh Das",
+    "school": "NUSH",
+    "github": "jeffilluminati",
+    "level": "JC2",
+    "img": "ppl/mayukh.jpg",
+    "conf": ["September"]
+  },
+  {
+    "name": "Lee I-Shiang",
+    "school": "NUSH",
+    "github": "BenTan101",
+    "level": "JC2",
+    "img": "ppl/Lee I-Shiang.jpeg",
+    "bio": "Hi, I'm I-Shiang :P I like coding, chemistry, and cheese.",
+    "conf": ["September"]
+  },
+  {
+    "name": "Jerome Palayoor",
+    "school": "ASRJC",
+    "github": "jeromepalayoor",
+    "level": "JC1",
+    "img": "ppl/Jerome_Palayoor.png",
+    "bio": "I love math and coding and recently picked up cyber security.",
+    "conf": ["December"]
+  },
+]
+
+
+const organisers = [
+
+  // {
+  //   "name": "Heng Yi Wang",
+  //   "school": "DHS",
+  //   "github": "dhshengyiwang",
+  //   "level": "JC2",
+  //   "img": "ppl/yiwang.jpg",
+  //   "bio": "I am a JC2 student studying at Dunman High School. My favourite field in Computer Science is Artificial Intelligence."
+  // },
+
+  // {
+  //   "name": "Isaac Yeap Sheng Rong",
+  //   "school": "HCI",
+  //   "github": "iysr",
+  //   "level": "JC2",
+  //   "img": "ppl/isaacyeap.jpeg"
+  // },
   // {
   //   "name": "Ng Johnson",
   //   "school": "DHS",
@@ -888,14 +1155,14 @@ const organisers = [
   //   "img": "ppl/ngjohnson.jpg",
   //   "bio": "Hello! I'm Johnson and I like cats"
   // },
-  {
-    "name": "Leow Yu Leong",
-    "school": "DHS",
-    "github": "jadedrag1108",
-    "level": "JC2",
-    "img": "ppl/leow_yuleong.jpg",
-    "bio": "Hi im Yu Leong. I'm currently a JC2 computing student studying at DHS"
-  },
+  // {
+  //   "name": "Leow Yu Leong",
+  //   "school": "DHS",
+  //   "github": "jadedrag1108",
+  //   "level": "JC2",
+  //   "img": "ppl/leow_yuleong.jpg",
+  //   "bio": "Hi im Yu Leong. I'm currently a JC2 computing student studying at DHS"
+  // },
   // {
   //   "name": "Dylan Alden Kusbiyantoro",
   //   "school": "VJC",
@@ -904,22 +1171,15 @@ const organisers = [
   //   "img": "ppl/Dylan_Alden_Kusbiyantoro.jpg",
   //   "bio": "I'm a JC student passionate in web development, artificial intelligence, game design, and robotics"
   // },
-  {
-    "name": "Tan Junheng",
-    "school": "NUSH",
-    "github": "azazazo",
-    "level": "Sec 4",
-    "img": "ppl/Tan_Junheng.png",
-    "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
-  },
-  {
-    "name": "Lee I-Shiang",
-    "school": "NUSH",
-    "github": "BenTan101",
-    "level": "JC2",
-    "img": "ppl/Lee I-Shiang.jpeg",
-    "bio": "Hi, I'm I-Shiang :P I like coding, chemistry, and cheese."
-  }
+  // {
+  //   "name": "Tan Junheng",
+  //   "school": "NUSH",
+  //   "github": "azazazo",
+  //   "level": "Sec 4",
+  //   "img": "ppl/Tan_Junheng.png",
+  //   "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
+  // },
+
 ].sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
 
 </script>
