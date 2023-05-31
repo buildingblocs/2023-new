@@ -215,10 +215,6 @@ const OICs = [
     "level": "JC2",
     "github": "oneytlam",
     "img": "ppl/yikting.png",
-    "comms": [
-      "QA",
-      "Games"
-    ],
     "bio": "YT here - explorer of AI, Web Dev and Cybersec. If I'm not listening to music, I'm probably on a BuildingBloCS call. :>"
   },
   {
@@ -227,10 +223,6 @@ const OICs = [
     "level": "JC2",
     "github": "teraSurfer40141",
     "img": "ppl/leqi.png",
-    "comms": [
-      "HR",
-      "WS"
-    ],
     "bio": "Hi, I'm Le Qi, a JC2 student from TJC. I like all things computers 😎."
   },
   {
@@ -239,9 +231,6 @@ const OICs = [
     "level": "JC2",
     "github": "ThePyProgrammer",
     "img": "ppl/prannay.jpg",
-    "comms": [
-      "Dev"
-    ],
     "bio": "Hi I'm Prannaya, a JC2 Student at NUSH and I like training AI, developing software and golfing the hell out of some code 🙂."
   }
 ]
@@ -803,6 +792,14 @@ const dev = [
     "level": "Grade 9",
     "img": "ppl/Peter.jpeg",
     "bio": "I'm a student developer currently studying in Singapore."
+  },
+  {
+    "name": "Raymond Goo",
+    "school": "NP",
+    "github": "provsalt",
+    "level": "Poly 3",
+    "img": "ppl/Raymond_goo.jpg",
+    "bio": "I like doing things and stuff software related."
   },
   {
     "name": "Ma Jinghong",
