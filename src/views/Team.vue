@@ -167,7 +167,7 @@
 
 
 
-    <v-col cols="12">
+    <!-- <v-col cols="12">
       <div class="ma-4 text-left align-left">
         <h3 style="font-size: 30px;">Others</h3>
       </div>
@@ -175,7 +175,7 @@
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in organisers" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
-          <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
+          <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
             <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
@@ -183,7 +183,7 @@
         <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
         <p class="card-desc">{{ organiser.bio }}</p>
       </v-card>
-    </v-col>
+    </v-col> -->
 
     <v-col cols="12">
       <div class="ma-4 text-left align-left">
