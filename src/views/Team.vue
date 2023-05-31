@@ -296,8 +296,15 @@ const hr = [
     "github": "sotong1337",
     "img": "ppl/swee_kang.jpg",
     "bio": "H2 computing student does CTF, competitive programming and competitions."
-  }
-
+  },
+  {
+    "name": "Adapaka Vinita",
+    "school": "GIIS",
+    "github": "vi-nita",
+    "level": "JC1",
+    "img": "ppl/adapaka_vinita.jpg",
+    "bio": "I am a fast learner and am passionate about coding and programming. I also enjoy dancing."
+  },
 ]
 
 const qa = [
@@ -888,14 +895,6 @@ const organisers = [
     "level": "JC2",
     "img": "ppl/leow_yuleong.jpg",
     "bio": "Hi im Yu Leong. I'm currently a JC2 computing student studying at DHS"
-  },
-  {
-    "name": "Adapaka Vinita",
-    "school": "GIIS",
-    "github": "vi-nita",
-    "level": "JC1",
-    "img": "ppl/adapaka_vinita.jpg",
-    "bio": "I am a fast learner and am passionate about coding and programming. I also enjoy dancing."
   },
   // {
   //   "name": "Dylan Alden Kusbiyantoro",
