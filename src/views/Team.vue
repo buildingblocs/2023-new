@@ -17,7 +17,6 @@
     <v-col cols="12" sm="6" md="3" v-for="organiser in OICs" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
-          <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
             <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
