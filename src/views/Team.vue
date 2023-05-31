@@ -1092,6 +1092,15 @@ const ws = [
     "conf": ["September"]
   },
   {
+    "name": "Neil Bhandari",
+    "school": "VJC",
+    "level": "JC1",
+    "img": "ppl/neil.png",
+    "github": "Armweak5104",
+    "bio": "I will be in JC1 in 2023. I code mainly in python and C++. I also fail captcha tests too much.",
+    "conf": ["September"]
+  },
+  {
     "name": "Cervon Wong",
     "school": "NUSH",
     "github": "cervonwong",
