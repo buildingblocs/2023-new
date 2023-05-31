@@ -765,7 +765,14 @@ const dev = [
     "img": "ppl/Jerome_Palayoor.png",
     "bio": "I love math and coding and recently picked up cyber security."
   },
-
+  {
+    "name": "Daniel Chua Han",
+    "school": "SAJC",
+    "github": "indaniel",
+    "level": "JC2",
+    "img": "ppl/daniel_chua.jpg",
+    "bio": "Hi, I'm Daniel, a JC2 student from SAJC. I occasionally do informatics."
+  }
 ]
 
 
