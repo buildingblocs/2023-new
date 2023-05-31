@@ -12,6 +12,7 @@
     <v-col cols="12">
       <div class="ma-4 text-left align-left">
         <h2 style="font-size: 40px;">Our OICs</h2>
+        <p style="font-size: 20px;">BuildingBloCS 2023 is led by a set of <s>charismatic</s> passionate overall ICs who overlook various departments within the organisation. Having worked together on organising BuildingBloCS 2022 last year, the organisers aim to help make BuildingBloCS 2023 even bigger and more far-reaching than ever before.</p>
       </div>
     </v-col>
     <v-col cols="12" sm="6" md="3" v-for="organiser in OICs" :key="organiser.name">
@@ -47,6 +48,11 @@
     <v-col cols="12">
       <div class="ma-4 text-left align-left">
         <h2 style="font-size: 40px;">Our Organisers</h2>
+        <p style="font-size: 20px;">Without our organizers, we wouldn't be able to organize much of BuildingBloCS, hence this serves as a <i>thank-you note</i> to all of them for their willingness to help and make BuildingBloCS possible!</p>
+      </div>
+    </v-col>
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
         <h3 style="font-size: 30px;">Human Resources</h3>
       </div>
     </v-col>
@@ -291,7 +297,7 @@ const hr = [
     "school": "TJC",
     "level": "Sec 4",
     "github": "Dhanvine321",
-    "img": "ppl/dhanvine.jpeg",
+    "img": "ppl/dhanvine.jpg",
     "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!"
   },
   {
@@ -300,7 +306,7 @@ const hr = [
     "level": "JC2",
     "github": "sotong1337",
     "img": "ppl/swee_kang.jpg",
-    "bio": "H2 computing student does CTF, competitive programming, competitions, and NCC admin in my school."
+    "bio": "H2 computing student does CTF, competitive programming and competitions."
   }
 
 ]
@@ -909,6 +915,14 @@ const organisers = [
     "level": "Sec 4",
     "img": "ppl/Tan_Junheng.png",
     "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
+  },
+  {
+    "name": "Lee I-Shiang",
+    "school": "NUSH",
+    "github": "BenTan101",
+    "level": "JC2",
+    "img": "ppl/Lee I-Shiang.jpeg",
+    "bio": "Hi, I'm I-Shiang :P I like coding, chemistry, and cheese."
   }
 ].sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
 
