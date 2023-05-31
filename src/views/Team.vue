@@ -390,7 +390,7 @@ const qa = [
     "bio": "I'm Hnin, a student with a burning passion for technology."
   },
   {
-    "name": "Chean Jun Ee",
+    "name": "Cheah Jun Ee",
     "school": "ACJC",
     "github": "JunEe23",
     "level": "JC1",
