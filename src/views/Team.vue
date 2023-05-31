@@ -15,7 +15,7 @@
         <p style="font-size: 20px;">BuildingBloCS 2023 is led by a set of <s>charismatic</s> passionate overall ICs who overlook various departments within the organisation. Having worked together on organising BuildingBloCS 2022 last year, the organisers aim to help make BuildingBloCS 2023 even bigger and more far-reaching than ever before.</p>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in OICs" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in OICs" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
         </div>
@@ -56,7 +56,7 @@
         <h3 style="font-size: 30px;">Human Resources</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in hr" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in hr" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -75,7 +75,7 @@
         <h3 style="font-size: 30px;">Quality Assurance</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in qa" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in qa" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -94,7 +94,7 @@
         <h3 style="font-size: 30px;">Workshop Admin</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in adshop" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in adshop" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -113,7 +113,7 @@
         <h3 style="font-size: 30px;">Publicity & Design</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in pubs" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in pubs" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -132,7 +132,7 @@
         <h3 style="font-size: 30px;">Hackathon</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in hack" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in hack" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -152,7 +152,7 @@
         <h3 style="font-size: 30px;">Development</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in dev" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in dev" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
@@ -172,7 +172,7 @@
         <h3 style="font-size: 30px;">Others</h3>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="3" v-for="organiser in organisers" :key="organiser.name">
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in organisers" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
         <div class="cover text-right">
           <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
