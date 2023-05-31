@@ -14,7 +14,19 @@
         <h2 style="font-size: 40px;">Our OICs</h2>
       </div>
     </v-col>
-    <v-col cols="12" sm="6" md="4" v-for="oic in OICs" :key="oic.name">
+    <v-col cols="12" sm="6" md="3" v-for="organiser in OICs" :key="organiser.name">
+      <v-card height="100%" width="90%" class="card justify-center align-center text-center">
+        <div class="cover text-right">
+          <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
+        </div>
+        <div class="card-img-wrapper">
+            <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
+        </div>
+        <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
+        <p class="card-desc">{{ organiser.bio }}</p>
+      </v-card>
+    </v-col>
+    <!-- <v-col cols="12" sm="6" md="4" v-for="oic in OICs" :key="oic.name">
       <v-card height="100%" class="card justify-center align-center text-center">
         <div class="cover"></div>
         <div class="card-img-wrapper">
@@ -30,7 +42,7 @@
             </div>
         </div>
       </v-card>
-    </v-col>
+    </v-col> -->
   </v-row>
   <v-row class="px-8 ma-4 justify-center align-center text-center">
     <v-col cols="12">
@@ -273,25 +285,24 @@ const hr = [
     "github": "python-noob-dotcom",
     "level": "JC1",
     "img": "ppl/eugeneang.jpg",
-    "comms": [
-      "HR"
-    ],
     "bio": "Hi, I'm Eugene and i believe that caffeine is a miracle drug"
   },
   {
     "name": "Dhanvine Rameshkumar",
     "school": "TJC",
-    "comms": [
-      "Dev",
-      "HR",
-      "WS",
-      "Games"
-    ],
     "level": "Sec 4",
     "github": "Dhanvine321",
     "img": "ppl/dhanvine.jpeg",
     "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!"
   },
+  {
+    "name": "Tan Swee Kang",
+    "school": "RVHS",
+    "level": "JC2",
+    "github": "sotong1337",
+    "img": "ppl/swee_kang.jpg",
+    "bio": "H2 computing student does CTF, competitive programming, competitions, and NCC admin in my school."
+  }
 
 ]
 
@@ -603,10 +614,10 @@ const pubs = [
   {
     "name": "Yau Le Han",
     "school": "CGSS",
-    "github": "",
+    "github": "lh00000",
     "level": "Sec 4",
     "img": "ppl/",
-    "bio": "I'm a Sec 4 looking to find something I would be passionate about, and see if CS is the thing for me."
+    "bio": "Sec 4 student exploring CS passion, with no experience, eager to learn and gain skills."
   },
   {
     "name": "Chua Tze Xuan, Sophia",
@@ -661,7 +672,14 @@ const hack = [
     "img": "ppl/ishneet.jpg",
     "bio": "Hi, I'm Ishneet, a JC2 student from TJC."
   },
-
+  {
+    "name": "Papangkorn Wangchochedkun",
+    "school": "VJC",
+    "github": "LegiboY",
+    "level": "JC1",
+    "img": "ppl/Pann.jpg",
+    "bio": "Hi, my name is Pann. VJC J1, trying to comprehend this uncommented code. Used to be a Scrabble god."
+  }
 ]
 
 
@@ -772,6 +790,30 @@ const dev = [
     "level": "JC2",
     "img": "ppl/daniel_chua.jpg",
     "bio": "Hi, I'm Daniel, a JC2 student from SAJC. I occasionally do informatics."
+  },
+  {
+    "name": "Zeyu Yao (Peter)",
+    "school": "SAIS",
+    "github": "cytronicoder",
+    "level": "Grade 9",
+    "img": "ppl/Peter.jpeg",
+    "bio": "I'm a student developer currently studying in Singapore."
+  },
+  {
+    "name": "Ma Jinghong",
+    "school": "HCI",
+    "github": "",
+    "level": "JC2",
+    "img": "ppl/jinghong.jpg",
+    "bio": "I am a J2 student from HCI, and take PCME. I hope to help out for this event and learn relevant skills :)"
+  },
+  {
+    "name": "Raj Harsh",
+    "school": "YIJC",
+    "github": "Hars-raj",
+    "level": "JC2",
+    "img": "ppl/Raj Harsh.png",
+    "bio": "I am a JC2 student at YIJC, I take H2 computing and have an interest in programming and AI"
   }
 ]
 
@@ -813,51 +855,36 @@ const organisers = [
     "school": "HCI",
     "github": "fishjojo1",
     "level": "JC2",
-    "img": "ppl/joeytang.jpeg",
-    "comms": [
-      "WS",
-      "DEV"
-    ]
+    "img": "ppl/joeytang.jpeg"
   },
   {
     "name": "Isaac Yeap Sheng Rong",
     "school": "HCI",
     "github": "iysr",
     "level": "JC2",
-    "img": "ppl/isaacyeap.jpeg",
-    "comms": [
-      "HR",
-      "Admin"
-    ]
+    "img": "ppl/isaacyeap.jpeg"
   },
   {
     "name": "Jessie Chin Kit Hey",
     "school": "HCI",
     "github": "jcc-kh",
     "level": "JC2",
-    "img": "ppl/jessie.jpg",
-    "comms": [
-      "WS",
-      "DEV"
-    ]
+    "img": "ppl/jessie.jpg"
   },
-  {
-    "name": "Ng Johnson",
-    "school": "DHS",
-    "github": "cpp-johnny",
-    "level": "JC1",
-    "img": "ppl/ngjohnson.jpg",
-    "bio": "Hello! I'm Johnson and I like cats"
-  },
+  // {
+  //   "name": "Ng Johnson",
+  //   "school": "DHS",
+  //   "github": "cpp-johnny",
+  //   "level": "JC1",
+  //   "img": "ppl/ngjohnson.jpg",
+  //   "bio": "Hello! I'm Johnson and I like cats"
+  // },
   {
     "name": "Leow Yu Leong",
     "school": "DHS",
     "github": "jadedrag1108",
     "level": "JC2",
     "img": "ppl/leow_yuleong.jpg",
-    "comms": [
-      "Dev"
-    ],
     "bio": "Hi im Yu Leong. I'm currently a JC2 computing student studying at DHS"
   },
   {
@@ -866,42 +893,22 @@ const organisers = [
     "github": "vi-nita",
     "level": "JC1",
     "img": "ppl/adapaka_vinita.jpg",
-    "comms": [
-      "HR"
-    ],
     "bio": "I am a fast learner and am passionate about coding and programming. I also enjoy dancing."
   },
   // {
-  //   "name": "Jovn Setiawan Jaya",
-  //   "school": "TJC",
-  //   "github": "Benjjji",
+  //   "name": "Dylan Alden Kusbiyantoro",
+  //   "school": "VJC",
+  //   "github": "ZestyP4nda",
   //   "level": "JC1",
-  //   "img": "ppl/Jovn.jpg",
-  //   "comms": [
-  //     "Pubs"
-  //   ],
-  //   "bio": "Hi, I'm Jovn. ✨I am an average human being✨"
+  //   "img": "ppl/Dylan_Alden_Kusbiyantoro.jpg",
+  //   "bio": "I'm a JC student passionate in web development, artificial intelligence, game design, and robotics"
   // },
-  {
-    "name": "Dylan Alden Kusbiyantoro",
-    "school": "VJC",
-    "github": "ZestyP4nda",
-    "level": "JC1",
-    "img": "ppl/Dylan_Alden_Kusbiyantoro.jpg",
-    "comms": [
-      "Dev"
-    ],
-    "bio": "I’m a JC student passionate in web development, artificial intelligence, game design, and robotics"
-  },
   {
     "name": "Tan Junheng",
     "school": "NUSH",
     "github": "azazazo",
-    "level": "Sec4",
+    "level": "Sec 4",
     "img": "ppl/Tan_Junheng.png",
-    "comms": [
-      "Dev"
-    ],
     "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
   }
 ].sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
