@@ -73,7 +73,7 @@
             This year, the theme is <b>Artificial Intelligence</b>. We are holding over 17 workshops, 5 talks and 3 hackathons over 3 tracks to cater to various skill levels!
           </p>
         </div>
-        <button @click="router.push('/home')" style=" background: #FFB546; border-radius: 16px;
+        <button @click="router.push('/events/june')" style=" background: #FFB546; border-radius: 16px;
           padding: 10px 24px; margin-bottom: 30px; margin-left: 30px;
           font-size: 20px;
           font-weight: 600;
