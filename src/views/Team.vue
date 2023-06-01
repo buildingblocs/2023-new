@@ -951,7 +951,7 @@ const dev = [
   {
     "name": "Wang Zerui",
     "school": "NUSH",
-    "github": "Wang-Zerui",
+    "github": "theriseof9",
     "level": "Sec 4",
     "img": "ppl/zerui.jpg",
     "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!"
@@ -1043,7 +1043,7 @@ const ctf = [
   {
     "name": "Wang Zerui",
     "school": "NUSH",
-    "github": "Wang-Zerui",
+    "github": "theriseof9",
     "level": "Sec 4",
     "img": "ppl/zerui.jpg",
     "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!"
