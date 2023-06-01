@@ -143,21 +143,21 @@ const drawerRoutes = [
     path: "/events",
     icon: "mdi-calendar-multiple-check",
   },
-  {
-    name: "Competitions",
-    path: `/competitions`,
-    icon: "mdi-trophy-variant"
-  },
+  // {
+  //   name: "Competitions",
+  //   path: `/competitions`,
+  //   icon: "mdi-trophy-variant"
+  // },
   {
     name: "Our Team",
     path: "/team",
     icon: "mdi-account-group"
   },
-  {
-    name: "Partners",
-    path: "/partners",
-    icon: "mdi-domain"
-  },
+  // {
+  //   name: "Partners",
+  //   path: "/partners",
+  //   icon: "mdi-domain"
+  // },
   // {
   //   name: "Register",
   //   path: "https://go.buildingblocs.sg/june",
