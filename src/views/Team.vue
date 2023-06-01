@@ -1602,6 +1602,11 @@ a {
     top: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
+}
+
+.card .v-btn {
+  z-index: 100;
 }
 .card {
     position: relative;
