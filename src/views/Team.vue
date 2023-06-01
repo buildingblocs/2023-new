@@ -70,8 +70,8 @@
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
           <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
-          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
+          <!-- <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn> -->
           <v-spacer></v-spacer>
           <!-- </div> -->
         </div>
@@ -103,8 +103,8 @@
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
           <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
-          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
+          <!-- <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn> -->
           <v-spacer></v-spacer>
           <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
         </div>
@@ -129,8 +129,8 @@
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
           <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
-          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
+          <!-- <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn> -->
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
 
@@ -182,8 +182,8 @@
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
           <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
-          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
+          <!-- <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn> -->
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -234,8 +234,8 @@
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
           <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
-          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
+          <!-- <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn> -->
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
