@@ -204,7 +204,7 @@ const intermediate = [
       color: 'success',
       title: "Intro to Data Processing",
       by: "by Khoo Kai Wen (NUSH) and Ma Jinghong (HCI)",
-      img: "/assets/june/python.jpg"
+      img: "/assets/june/dataproc.png"
     },
     {
       id: 3,
