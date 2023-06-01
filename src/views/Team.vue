@@ -650,7 +650,7 @@ const qa = [
     "school": "ACJC",
     "github": "JunEe23",
     "level": "JC1",
-    "img": "ppl/",
+    "img": "ppl/junee.jpg",
     "bio": "I take A level computing in jc and my combi is CCME."
   },
   {
