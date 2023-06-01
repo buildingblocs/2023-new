@@ -43,6 +43,31 @@
         </div>
       </v-card>
     </v-col> -->
+
+
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
+        <h2 style="font-size: 40px;">Our Executive Committee (Exco)</h2>
+        <p style="font-size: 20px;">In addition to the OICs, BuildingBloCS 2023 is largely indebted to our Executive Committee that strives to help with event management and other tasks, such that work is easily distributed to organisers.</p>
+      </div>
+    </v-col>
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
+        <h3 style="font-size: 30px;">June Conference</h3>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in exco" :key="organiser.name">
+      <v-card height="100%" width="90%" class="card justify-center align-center text-center">
+        <div class="cover text-right">
+        </div>
+        <div class="card-img-wrapper">
+            <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
+        </div>
+        <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
+        <p class="card-desc">{{ organiser.bio }}</p>
+      </v-card>
+    </v-col>
+
   </v-row>
   <v-row class="px-8 ma-4 justify-center align-center text-center">
     <v-col cols="12">
@@ -51,6 +76,25 @@
         <p style="font-size: 20px;">Without our organizers, we wouldn't be able to organize much of BuildingBloCS, hence this serves as a <i>thank-you note</i> to all of them for their willingness to help and make BuildingBloCS possible!</p>
       </div>
     </v-col>
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
+        <h3 style="font-size: 30px;">Emcees</h3>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in emcees" :key="organiser.name">
+      <v-card height="100%" width="90%" class="card justify-center align-center text-center">
+        <div class="cover text-right">
+          <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
+        </div>
+        <div class="card-img-wrapper">
+            <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
+        </div>
+        <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
+        <p class="card-desc">{{ organiser.bio }}</p>
+      </v-card>
+    </v-col>
+
+
     <v-col cols="12">
       <div class="ma-4 text-left align-left">
         <h3 style="font-size: 30px;">Human Resources</h3>
@@ -166,6 +210,24 @@
     </v-col>
 
 
+    <v-col cols="12">
+      <div class="ma-4 text-left align-left">
+        <h3 style="font-size: 30px;">BBCS x BlahajCTF Organisers</h3>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in ctf" :key="organiser.name">
+      <v-card height="100%" width="90%" class="card justify-center align-center text-center">
+        <div class="cover text-right">
+          <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
+        </div>
+        <div class="card-img-wrapper">
+            <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
+        </div>
+        <h1 class="card-title" style="margin-bottom: 10px;">{{ organiser.name }}</h1>
+        <p class="card-desc">{{ organiser.bio }}</p>
+      </v-card>
+    </v-col>
+
 
     <!-- <v-col cols="12">
       <div class="ma-4 text-left align-left">
@@ -261,6 +323,112 @@ const OICs = [
     "github": "ThePyProgrammer",
     "img": "ppl/prannay.jpg",
     "bio": "Hi I'm Prannaya, a JC2 Student at NUSH and I like training AI, developing software and golfing the hell out of some code 🙂."
+  }
+]
+
+const exco = [
+  {
+    "name": "Khoo Kai Wen",
+    "school": "NUSH",
+    "github": "deadly-nightshade",
+    "level": "JC1",
+    "img": "ppl/kaiwen.jpg",
+    "bio": "Hi, I'm a JC1 Student at NUSH"
+  },
+  {
+    "name": "Zayan Karimi",
+    "school": "NUSH",
+    "github": "waffleSheep",
+    "level": "JC2",
+    "img": "ppl/zayan.jpg",
+    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail."
+  },
+  {
+    "name": "Du Yuhan",
+    "school": "MGS",
+    "github": "TwelvePenguins",
+    "level": "Year 4",
+    "img": "ppl/duyuhan.jpeg",
+    "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer."
+  },
+  {
+    "name": "Cher Jin En",
+    "school": "TJC",
+    "github": "shindeux",
+    "level": "JC1",
+    "img": "ppl/cherjinen.jpeg",
+    "bio": "Hi, I listen to MAMAMOO and play Solitaire for fun"
+  },
+  {
+    "name": "Suraj Kumar",
+    "school": "TJC",
+    "github": "Tsk78",
+    "level": "JC2",
+    "img": "ppl/suraj.png",
+    "comms": [
+      "HR",
+      "DEV"
+    ],
+    "bio": "Hello, I'm Suraj and coding with black coffee and music is my thing."
+  },
+  {
+    "name": "Bryant Shi",
+    "school": "TJC",
+    "level": "JC1",
+    "img": "ppl/bryant.jpeg",
+    "github": "flame-staff",
+    "bio": "Yo My name is Bryant. I am a fellow CS student and heavily enjoy games"
+  },
+  {
+    "name": "Renoir Tan",
+    "school": "RI",
+    "github": "RenoirTan",
+    "level": "JC2",
+    "img": "ppl/renoir.jpg",
+    "bio": "I'm a JC2 Student at RI."
+  },
+  {
+    "name": "Seth Olav Yong",
+    "school": "SP",
+    "github": "idkSeth",
+    "level": "Poly 2",
+    "img": "ppl/seth.jpeg",
+    "bio": "Hi, I'm Seth, a Poly 2 student from SP."
+  },
+  {
+    "name": "Yap Yuan Xi",
+    "school": "NUSH",
+    "github": "Haloen",
+    "level": "JC2",
+    "img": "ppl/yuanxi.jpg",
+    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development."
+  },
+]
+
+const emcees = [
+  {
+    "name": "Zayan Karimi",
+    "school": "NUSH",
+    "github": "waffleSheep",
+    "level": "JC2",
+    "img": "ppl/zayan.jpg",
+    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail."
+  },
+  {
+    "name": "Sanke Mahit",
+    "school": "YIJC",
+    "github": "AppleGesus",
+    "level": "JC2",
+    "img": "ppl/Sanke_Mahit.jpg",
+    "bio": "My name is Sanke Mahit and I am in JC2 this year!"
+  },
+  {
+    "name": "Dhanvine Rameshkumar",
+    "school": "TJC",
+    "level": "Sec 4",
+    "github": "Dhanvine321",
+    "img": "ppl/dhanvine.jpg",
+    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!"
   }
 ]
 
@@ -712,7 +880,6 @@ const hack = [
   }
 ]
 
-
 const dev = [
   {
     "name": "Seth Olav Yong",
@@ -853,6 +1020,73 @@ const dev = [
     "img": "ppl/Raj Harsh.png",
     "bio": "I am a JC2 student at YIJC, I take H2 computing and have an interest in programming and AI"
   }
+]
+
+const ctf = [
+  {
+    "name": "Yap Yuan Xi",
+    "school": "NUSH",
+    "github": "Haloen",
+    "level": "JC2",
+    "img": "ppl/yuanxi.jpg",
+    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
+    "lead": true
+  },
+  {
+    "name": "Wang Zerui",
+    "school": "NUSH",
+    "github": "Wang-Zerui",
+    "level": "Sec 4",
+    "img": "ppl/zerui.jpg",
+    "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!"
+  },
+  {
+    "name": "Tan Junheng",
+    "school": "NUSH",
+    "github": "azazazo",
+    "level": "Sec 4",
+    "img": "ppl/Tan_Junheng.png",
+    "bio": "biggest blåhaj fan🦈❤️❤️ i like crypto(graphy) and sometimes play ctfs"
+  },
+  {
+    "name": "Christian James Tan",
+    "school": "NUSH",
+    "github": "Xenon1345",
+    "level": "Sec 4",
+    "img": "ppl/",
+    "bio": "Hi, I'm Christian, a Y4 student from NUSH"
+  },
+  {
+    "name": "Vincent Kwok",
+    "school": "NUSH",
+    "github": "cryptoAlgorithm",
+    "level": "Sec 4",
+    "img": "ppl/",
+    "bio": "Hi, I'm Vincent, a Y4 student from NUSH"
+  },
+  {
+    "name": "Jerome Palayoor",
+    "school": "ASRJC",
+    "github": "jeromepalayoor",
+    "level": "JC1",
+    "img": "ppl/Jerome_Palayoor.png",
+    "bio": "I love math and coding and recently picked up cyber security."
+  },
+  {
+    "name": "Lim Sue Han Justin",
+    "school": "NUSH",
+    "github": "jun-lsh",
+    "level": "JC2",
+    "img": "ppl/",
+    "bio": "Hi, I'm Justin, a Y6 student from NUS High."
+  },
+  {
+    "name": "Joey Tang",
+    "school": "HCI",
+    "github": "fishjojo1",
+    "level": "JC2",
+    "img": "ppl/joeytang.jpeg"
+  },
 ]
 
 const ws = [
@@ -1180,14 +1414,7 @@ const organisers = [
   //   "img": "ppl/Dylan_Alden_Kusbiyantoro.jpg",
   //   "bio": "I'm a JC student passionate in web development, artificial intelligence, game design, and robotics"
   // },
-  // {
-  //   "name": "Tan Junheng",
-  //   "school": "NUSH",
-  //   "github": "azazazo",
-  //   "level": "Sec 4",
-  //   "img": "ppl/Tan_Junheng.png",
-  //   "bio": "biggest blåhaj fan🦈❤️❤️i like crypto(graphy) and sometimes play ctfs"
-  // },
+
 
 ]//.sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
 
