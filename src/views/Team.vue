@@ -534,7 +534,7 @@ const qa = [
     "name": "James Tan Dejun",
     "school": "RVHS",
     "level": "JC2",
-    "img": "ppl/",
+    "img": "ppl/james_tan.png",
     "github": "Dragonslayer262",
     "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning."
   },
@@ -737,6 +737,14 @@ const adshop = [
     "img": "ppl/Chee_Justin.jpg",
     "bio": "Hi I'm Justin, a JC1 computing student in DHS who also likes playing guitar"
   },
+  {
+    "name": "Anangore Seetharaman Ghayathri",
+    "school": "GIIS",
+    "github": "Gau567",
+    "level": "JC1",
+    "img": "ppl/",
+    "bio": "Passionate about AI and CS, aims to achieve in the industry. Enjoys crime/thriller books."
+  }
   // {
   //   "name": "Jia Nan"
   // }
@@ -818,7 +826,7 @@ const pubs = [
     "bio": "Sec 4 student exploring CS passion, with no experience, eager to learn and gain skills."
   },
   {
-    "name": "Chua Tze Xuan, Sophia",
+    "name": "Sophia Chua",
     "school": "CGSS",
     "github": "TAUVX",
     "level": "Sec4",
@@ -1227,7 +1235,7 @@ const ws = [
     "name": "James Tan Dejun",
     "school": "RVHS",
     "level": "JC2",
-    "img": "ppl/",
+    "img": "ppl/james_tan.png",
     "github": "Dragonslayer262",
     "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning.",
     "conf": ["June"]
