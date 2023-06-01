@@ -1670,7 +1670,7 @@ a {
     position: relative;
 }
 .card .card-footer .footer-box .box-wrapper .count {
-    font-family: 'consolas';
+    font-family: 'Courier New','consolas';
     color: #434343;
     font-size: 20px;
     font-weight: 600;
