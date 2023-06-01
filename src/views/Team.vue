@@ -20,8 +20,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`${organiser.website}`"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
         </div>
         <div class="card-img-wrapper">
@@ -66,8 +68,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <!-- </div> -->
         </div>
@@ -97,8 +101,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
         </div>
@@ -121,8 +127,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
 
@@ -146,8 +154,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -170,8 +180,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -194,8 +206,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -218,8 +232,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -243,8 +259,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -267,8 +285,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
@@ -310,8 +330,10 @@
         <div class="cover d-flex">
           <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
           variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
-          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
           variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 mr-0 pa-1" color="white" style="min-width: 0" :href="organiser.website"
+          variant="text" v-if="organiser.website"><v-icon>mdi-web</v-icon></v-btn>
           <v-spacer></v-spacer>
 
         </div>
@@ -379,7 +401,8 @@ const OICs = [
     "github": "ThePyProgrammer",
     "img": "ppl/prannay.jpg",
     "bio": "Hi I'm Prannaya, a JC2 Student at NUSH and I like training AI, developing software and golfing the hell out of some code 🙂.",
-    "linkedin": "prannaya-gupta"
+    "linkedin": "prannaya-gupta",
+    "website": "https://prannay.ml"
   }
 ]
 
@@ -617,7 +640,8 @@ const qa = [
     "level": "JC2",
     "img": "ppl/cervon.jpg",
     "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
-    "linkedin": "cervonwong"
+    "linkedin": "cervonwong",
+    "website": "https://cervonwong.com/"
   },
   {
     "name": "Kannan Vishal",
@@ -860,7 +884,8 @@ const pubs = [
     "level": "JC2",
     "img": "ppl/cervon.jpg",
     "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
-    "linkedin": "cervonwong"
+    "linkedin": "cervonwong",
+    "website": "https://cervonwong.com/"
   },
   {
     "name": "Clara Lee",
@@ -980,7 +1005,8 @@ const dev = [
     "level": "JC1",
     "img": "ppl/wenkai.jpg",
     "bio": "Hi, I'm Wenkai, a JC1 student from NUSH.",
-    "lead": true
+    "lead": true,
+    "website": "https://squiddy.me/"
   },
   {
     "name": "Yap Yuan Xi",
@@ -1050,7 +1076,8 @@ const dev = [
     "level": "JC1",
     "img": "ppl/sawzedong.jpeg",
     "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more",
-    "linkedin": "ze-dong-saw-9b3936242"
+    "linkedin": "ze-dong-saw-9b3936242",
+    "website": "https://sawzedong.github.io/portfolio/"
   },
   {
     "name": "Cheong Jun Kai Harry",
@@ -1068,7 +1095,8 @@ const dev = [
     "level": "JC1",
     "img": "ppl/Jerome_Palayoor.png",
     "bio": "I love math and coding and recently picked up cyber security.",
-    "linkedin": "jeromepalayoor"
+    "linkedin": "jeromepalayoor",
+    "website": "https://jeromepalayoor.com/"
   },
   {
     "name": "Daniel Chua Han",
@@ -1085,7 +1113,8 @@ const dev = [
     "level": "Grade 9",
     "img": "ppl/Peter.jpeg",
     "bio": "I'm a student developer currently studying in Singapore.",
-    "linkedin": "cytronicoder"
+    "linkedin": "cytronicoder",
+    "website": "https://www.cytronicoder.com/"
   },
   {
     "name": "Raymond Goo",
@@ -1094,7 +1123,8 @@ const dev = [
     "level": "Poly 0",
     "img": "ppl/Raymond_goo.jpg",
     "bio": "I like doing things and stuff software related.",
-    "linkedin": "raymond-goo"
+    "linkedin": "raymond-goo",
+    "website": "https://www.raygoo.tech/"
   },
   {
     "name": "Ma Jinghong",
@@ -1158,9 +1188,10 @@ const ctf = [
     "school": "NUSH",
     "github": "cryptoAlgorithm",
     "level": "Sec 4",
-    "img": "ppl/",
-    "bio": "Hi, I'm Vincent, a Y4 student from NUSH",
-    "linkedin": "vincent-k-774963245"
+    "img": "ppl/kwok_vincent.jpg",
+    "bio": "I make beautiful cross-plarform experiences and sometimes do CTFs. ♥️ swift!",
+    "linkedin": "vincent-k-774963245",
+
   },
   {
     "name": "Jerome Palayoor",
@@ -1169,7 +1200,8 @@ const ctf = [
     "level": "JC1",
     "img": "ppl/Jerome_Palayoor.png",
     "bio": "I love math and coding and recently picked up cyber security.",
-    "linkedin": "jeromepalayoor"
+    "linkedin": "jeromepalayoor",
+    "website": "https://jeromepalayoor.com/"
   },
   {
     "name": "Lim Sue Han Justin",
@@ -1399,7 +1431,8 @@ const ws = [
     "img": "ppl/sawzedong.jpeg",
     "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more",
     "conf": ["June", "September"],
-    "linkedin": "ze-dong-saw-9b3936242"
+    "linkedin": "ze-dong-saw-9b3936242",
+    "website": "https://sawzedong.github.io/portfolio/"
   },
   {
     "name": "Cheong Jun Kai Harry",
@@ -1436,6 +1469,7 @@ const ws = [
     "level": "JC1",
     "img": "ppl/wenkai.jpg",
     "bio": "Hi, I'm Wenkai, a JC1 student from NUSH.",
+    "website": "https://squiddy.me/",
     "conf": ["September"]
   },
   {
@@ -1446,7 +1480,8 @@ const ws = [
     "img": "ppl/Peter.jpeg",
     "bio": "I'm a student developer currently studying in Singapore.",
     "linkedin": "cytronicoder",
-    "conf": ["September"]
+    "conf": ["September"],
+    "website": "https://www.cytronicoder.com/"
   },
   {
     "name": "Neil Bhandari",
@@ -1465,7 +1500,8 @@ const ws = [
     "img": "ppl/cervon.jpg",
     "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
     "conf": ["September"],
-    "linkedin": "cervonwong"
+    "linkedin": "cervonwong",
+    "website": "https://cervonwong.com/"
   },
   {
     "name": "Mayukh Das",
@@ -1493,7 +1529,8 @@ const ws = [
     "img": "ppl/Jerome_Palayoor.png",
     "bio": "I love math and coding and recently picked up cyber security.",
     "conf": ["December"],
-    "linkedin": "jeromepalayoor"
+    "linkedin": "jeromepalayoor",
+    "website": "https://jeromepalayoor.com/"
   },
 ]
 
