@@ -17,7 +17,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in OICs" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
         </div>
         <div class="card-img-wrapper">
             <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
@@ -58,7 +63,13 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in exco" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
+          <!-- </div> -->
         </div>
         <div class="card-img-wrapper">
             <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
@@ -83,7 +94,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in emcees" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip> -->
         </div>
         <div class="card-img-wrapper">
@@ -102,8 +118,14 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in hr" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
+
         </div>
         <div class="card-img-wrapper">
             <img :src="`/assets/${organiser.img}`" style="margin-top: 10px;" width="400px" />
@@ -121,7 +143,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in qa" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -140,7 +167,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in adshop" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -159,7 +191,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in pubs" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -178,7 +215,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in hack" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -198,7 +240,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in dev" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -217,7 +264,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in ctf" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
           <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-if="organiser.lead">Lead</v-chip>
         </div>
         <div class="card-img-wrapper">
@@ -255,10 +307,12 @@
     </v-col>
     <v-col cols="12" sm="6" md="4" lg="3" v-for="organiser in ws" :key="organiser.name">
       <v-card height="100%" width="90%" class="card justify-center align-center text-center">
-        <div class="cover text-right">
-          <v-chip-group>
-            <!-- <v-chip class="text-overline ma-2 text-white" style="font-size: 40px;" v-for="conf in organiser.conf" :key="conf">{{ conf }}</v-chip> -->
-          </v-chip-group>
+        <div class="cover d-flex">
+          <v-btn size="large" density="compact" class="ma-1 ml-2 mr-0 pa-1" color="white" style="min-width: 0" :href="`https://github.com/${organiser.github}`"
+          variant="text" v-if="organiser.github"><v-icon>mdi-github</v-icon></v-btn>
+          <v-btn size="large" density="compact" class="ma-1 pa-1" color="white" style="min-width: 0" :href="`https://linkedin.com/in/${organiser.linkedin}`"
+          variant="text" v-if="organiser.linkedin"><v-icon>mdi-linkedin</v-icon></v-btn>
+          <v-spacer></v-spacer>
 
         </div>
         <div class="card-img-wrapper">
@@ -306,7 +360,8 @@ const OICs = [
     "level": "JC2",
     "github": "oneytlam",
     "img": "ppl/yikting.png",
-    "bio": "YT here - explorer of AI, Web Dev and Cybersec. If I'm not listening to music, I'm probably on a BuildingBloCS call. :>"
+    "bio": "YT here - explorer of AI, Web Dev and Cybersec. If I'm not listening to music, I'm probably on a BuildingBloCS call. :>",
+    "linkedin": "oneytlam"
   },
   {
     "name": "Yau Le Qi",
@@ -314,7 +369,8 @@ const OICs = [
     "level": "JC2",
     "github": "teraSurfer40141",
     "img": "ppl/leqi.png",
-    "bio": "Hi, I'm Le Qi, a JC2 student from TJC. I like all things computers 😎."
+    "bio": "Hi, I'm Le Qi, a JC2 student from TJC. I like all things computers 😎.",
+    "linkedin": "yau-le-qi-045889234"
   },
   {
     "name": "Prannaya Gupta",
@@ -322,7 +378,8 @@ const OICs = [
     "level": "JC2",
     "github": "ThePyProgrammer",
     "img": "ppl/prannay.jpg",
-    "bio": "Hi I'm Prannaya, a JC2 Student at NUSH and I like training AI, developing software and golfing the hell out of some code 🙂."
+    "bio": "Hi I'm Prannaya, a JC2 Student at NUSH and I like training AI, developing software and golfing the hell out of some code 🙂.",
+    "linkedin": "prannaya-gupta"
   }
 ]
 
@@ -341,7 +398,8 @@ const exco = [
     "github": "waffleSheep",
     "level": "JC2",
     "img": "ppl/zayan.jpg",
-    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail."
+    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail.",
+    "linkedin": "karimi-zayan-1a64a8264"
   },
   {
     "name": "Du Yuhan",
@@ -349,7 +407,8 @@ const exco = [
     "github": "TwelvePenguins",
     "level": "Year 4",
     "img": "ppl/duyuhan.jpeg",
-    "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer."
+    "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer.",
+    "linkedin": "yuhan-du-12p3ngu5"
   },
   {
     "name": "Cher Jin En",
@@ -357,7 +416,8 @@ const exco = [
     "github": "shindeux",
     "level": "JC1",
     "img": "ppl/cherjinen.jpeg",
-    "bio": "Hi, I listen to MAMAMOO and play Solitaire for fun"
+    "bio": "Hi, I listen to MAMAMOO and play Solitaire for fun",
+    "linkedin": "cher-jin-en-675092235"
   },
   {
     "name": "Suraj Kumar",
@@ -365,11 +425,8 @@ const exco = [
     "github": "Tsk78",
     "level": "JC2",
     "img": "ppl/suraj.png",
-    "comms": [
-      "HR",
-      "DEV"
-    ],
-    "bio": "Hello, I'm Suraj and coding with black coffee and music is my thing."
+    "bio": "Hello, I'm Suraj and coding with black coffee and music is my thing.",
+    "linkedin": "suraj-kumar-2839b4233"
   },
   {
     "name": "Bryant Shi",
@@ -393,7 +450,8 @@ const exco = [
     "github": "idkSeth",
     "level": "Poly 2",
     "img": "ppl/seth.jpeg",
-    "bio": "Hi, I'm Seth, a Poly 2 student from SP."
+    "bio": "Hi, I'm Seth, a Poly 2 student from SP.",
+    "linkedin": "seth-yong-00672b229"
   },
   {
     "name": "Yap Yuan Xi",
@@ -401,7 +459,8 @@ const exco = [
     "github": "Haloen",
     "level": "JC2",
     "img": "ppl/yuanxi.jpg",
-    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development."
+    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
+    "linkedin": "yuan-xi-yap-5b3205242"
   },
 ]
 
@@ -412,7 +471,8 @@ const emcees = [
     "github": "waffleSheep",
     "level": "JC2",
     "img": "ppl/zayan.jpg",
-    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail."
+    "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail.",
+    "linkedin": "karimi-zayan-1a64a8264"
   },
   {
     "name": "Sanke Mahit",
@@ -428,7 +488,8 @@ const emcees = [
     "level": "Sec 4",
     "github": "Dhanvine321",
     "img": "ppl/dhanvine.jpg",
-    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!"
+    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!",
+    "linkedin": "dhanvine-rameshkumar"
   }
 ]
 
@@ -439,25 +500,19 @@ const hr = [
     "github": "Tsk78",
     "level": "JC2",
     "img": "ppl/suraj.png",
-    "comms": [
-      "HR",
-      "DEV"
-    ],
     "bio": "Hello, I'm Suraj and coding with black coffee and music is my thing.",
-    "lead": true
+    "lead": true,
+    "linkedin": "suraj-kumar-2839b4233"
   },
   {
     "name": "Isaac Kok",
     "school": "DHS",
-    "comms": [
-      "HR",
-      "Games"
-    ],
     "level": "JC2",
     "img": "ppl/isaac.jpg",
     "github": "Kweice",
     "bio": "Hi I'm Isaac. I do card tricks, listen to mandopop and my favourite artist is Joker Xue.",
-    "lead": true
+    "lead": true,
+    "linkedin": "isaac-kok"
   },
   {
     "name": "Oon Zheng Kang",
@@ -465,9 +520,6 @@ const hr = [
     "github": "ozk100",
     "level": "JC1",
     "img": "ppl/Oon_Zheng_Kang.jpg",
-    "comms": [
-      "HR"
-    ],
     "bio": "Hi, I'm Zheng Kang, a JC1 student from DHS."
   },
   {
@@ -476,7 +528,8 @@ const hr = [
     "github": "python-noob-dotcom",
     "level": "JC1",
     "img": "ppl/eugeneang.jpg",
-    "bio": "Hi, I'm Eugene and i believe that caffeine is a miracle drug"
+    "bio": "Hi, I'm Eugene and i believe that caffeine is a miracle drug",
+    "linkedin": "eugene-ang-8ab711264"
   },
   {
     "name": "Dhanvine Rameshkumar",
@@ -484,7 +537,8 @@ const hr = [
     "level": "Sec 4",
     "github": "Dhanvine321",
     "img": "ppl/dhanvine.jpg",
-    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!"
+    "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!",
+    "linkedin": "dhanvine-rameshkumar"
   },
   {
     "name": "Tan Swee Kang",
@@ -492,7 +546,8 @@ const hr = [
     "level": "JC2",
     "github": "sotong1337",
     "img": "ppl/swee_kang.jpg",
-    "bio": "H2 computing student does CTF, competitive programming and competitions."
+    "bio": "H2 computing student does CTF, competitive programming and competitions.",
+    "linkedin": "tan-swee-kang-rvhs-370aa8248"
   },
   {
     "name": "Adapaka Vinita",
@@ -536,7 +591,8 @@ const qa = [
     "level": "JC2",
     "img": "ppl/james_tan.png",
     "github": "Dragonslayer262",
-    "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning."
+    "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning.",
+    "linkedin": "james-tan-dejun"
   },
   {
     "name": "Justin Wang",
@@ -560,7 +616,8 @@ const qa = [
     "github": "cervonwong",
     "level": "JC2",
     "img": "ppl/cervon.jpg",
-    "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎"
+    "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
+    "linkedin": "cervonwong"
   },
   {
     "name": "Kannan Vishal",
@@ -576,7 +633,8 @@ const qa = [
     "github": "Haloen",
     "level": "JC2",
     "img": "ppl/yuanxi.jpg",
-    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development."
+    "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
+    "linkedin": "yuan-xi-yap-5b3205242"
   },
   {
     "name": "Hnin Sat Phyu Sin",
@@ -584,7 +642,8 @@ const qa = [
     "github": "hninsatphyusin",
     "level": "JC2",
     "img": "ppl/",
-    "bio": "I'm Hnin, a student with a burning passion for technology."
+    "bio": "I'm Hnin, a student with a burning passion for technology.",
+    "linkedin": "hnin-sat-phyu-sin-54344b265"
   },
   {
     "name": "Cheah Jun Ee",
@@ -624,7 +683,8 @@ const qa = [
     "github": "DangerousPotential",
     "level": "JC2",
     "img": "ppl/Teh_Kim_Wee.jpg",
-    "bio": "I'm Kim Wee, currently studying in ASRJC. Python is my main programming language"
+    "bio": "I'm Kim Wee, currently studying in ASRJC. Python is my main programming language",
+    "linkedin": "kim-wee-teh-963b9726a"
   },
   {
     "name": "Zhang Xiyuan",
@@ -632,7 +692,8 @@ const qa = [
     "github": "xiyuan1avery",
     "level": "JC2",
     "img": "ppl/zhang_xiyuan.jpg",
-    "bio": "Hi im Xiyuan from VJC!!! I luv coffee, running, math & programming. Curious&Learn&Enjoy@BBCS2023"
+    "bio": "Hi im Xiyuan from VJC!!! I luv coffee, running, math & programming. Curious&Learn&Enjoy@BBCS2023",
+    "linkedin": "xiyuan-zhang-b819a7242"
   }
 ]
 
@@ -653,7 +714,8 @@ const adshop = [
     "level": "JC2",
     "img": "ppl/zayan.jpg",
     "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail.",
-    "lead": true
+    "lead": true,
+    "linkedin": "karimi-zayan-1a64a8264"
   },
   {
     "name": "Du Yuhan",
@@ -662,7 +724,8 @@ const adshop = [
     "level": "Year 4",
     "img": "ppl/duyuhan.jpeg",
     "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer.",
-    "lead": true
+    "lead": true,
+    "linkedin": "yuhan-du-12p3ngu5"
   },
   {
     "name": "Cher Jin En",
@@ -671,7 +734,8 @@ const adshop = [
     "level": "JC1",
     "img": "ppl/cherjinen.jpeg",
     "bio": "Hi, I listen to MAMAMOO and play Solitaire for fun",
-    "lead": true
+    "lead": true,
+    "linkedin": "cher-jin-en-675092235"
   },
   {
     "name": "Tang Jiaxuan",
@@ -679,7 +743,8 @@ const adshop = [
     "github": "Jiaxuan06",
     "level": "JC1",
     "img": "ppl/Jiaxuan.jpg",
-    "bio": "Hello! I am Jiaxuan, a JC1 student from TJC annd I am a coffee addict 🤣"
+    "bio": "Hello! I am Jiaxuan, a JC1 student from TJC annd I am a coffee addict 🤣",
+    "linkedin": "jiaxuan-tang-ba383a264"
   },
   {
     "name": "Le Duc Minh",
@@ -695,7 +760,8 @@ const adshop = [
     "github": "jack-0000000",
     "level": "JC1",
     "img": "ppl/Lim_Jack.jpg",
-    "bio": "I am keen in learning more about computer science and developing my own programs."
+    "bio": "I am keen in learning more about computer science and developing my own programs.",
+    "linkedin": "lim-jack-tjc-1633b4277"
   },
   {
     "name": "Asha Solomon",
@@ -711,7 +777,8 @@ const adshop = [
     "github": "IsoceledAsh",
     "level": "JC1",
     "img": "ppl/Ashley_Alexster.jpg",
-    "bio": "Hi, I'm Ashley! I have always been interested in CS stuff since I was young, and currently take Computing as a subject in JC"
+    "bio": "Hi, I'm Ashley! I have always been interested in CS stuff since I was young, and currently take Computing as a subject in JC",
+    "linkedin": "ashley-alexster-1a1961278"
   },
   {
     "name": "Kothari Kashvi Chintan",
@@ -743,7 +810,8 @@ const adshop = [
     "github": "Gau567",
     "level": "JC1",
     "img": "ppl/",
-    "bio": "Passionate about AI and CS, aims to achieve in the industry. Enjoys crime/thriller books."
+    "bio": "Passionate about AI and CS, aims to achieve in the industry. Enjoys crime/thriller books.",
+    "linkedin": "ghayathri-seetharaman-471422272"
   }
   // {
   //   "name": "Jia Nan"
@@ -791,7 +859,8 @@ const pubs = [
     "github": "cervonwong",
     "level": "JC2",
     "img": "ppl/cervon.jpg",
-    "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎"
+    "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
+    "linkedin": "cervonwong"
   },
   {
     "name": "Clara Lee",
@@ -815,7 +884,8 @@ const pubs = [
     "github": "celnat312",
     "level": "NIL",
     "img": "ppl/celine_natalie.jpeg",
-    "bio": "I took H2 computing when I was in JC and I joined BBCS in 2021 and 2022!"
+    "bio": "I took H2 computing when I was in JC and I joined BBCS in 2021 and 2022!",
+    "linkedin": "celinenatalie"
   },
   {
     "name": "Yau Le Han",
@@ -823,7 +893,8 @@ const pubs = [
     "github": "lh00000",
     "level": "Sec 4",
     "img": "ppl/",
-    "bio": "Sec 4 student exploring CS passion, with no experience, eager to learn and gain skills."
+    "bio": "Sec 4 student exploring CS passion, with no experience, eager to learn and gain skills.",
+    "linkedin": "le-han-yau-5a6187261"
   },
   {
     "name": "Sophia Chua",
@@ -852,7 +923,8 @@ const hack = [
     "level": "JC1",
     "img": "ppl/mahir.png",
     "bio": "NUSH student who likes CTFs, AI and C++. Games and dies in Physics sometimes.",
-    "lead": true
+    "lead": true,
+    "linkedin": "mahir-shah-681aa0261"
   },
   {
     "name": "Ashwin Lokesh",
@@ -860,7 +932,8 @@ const hack = [
     "github": "electron13",
     "level": "JC2",
     "img": "ppl/ashwin.jpg",
-    "bio": "I am Ashwin."
+    "bio": "I am Ashwin.",
+    "linkedin": "ashwin-l-82968a202"
   },
   {
     "name": "Jed Lim",
@@ -876,7 +949,8 @@ const hack = [
     "github": "Ishneet0710",
     "level": "JC2",
     "img": "ppl/ishneet.jpg",
-    "bio": "Hi, I'm Ishneet, a JC2 student from TJC."
+    "bio": "Hi, I'm Ishneet, a JC2 student from TJC.",
+    "linkedin": "ishneet-singh-a51697210"
   },
   {
     "name": "Papangkorn Wangchochedkun",
@@ -896,7 +970,8 @@ const dev = [
     "level": "Poly 2",
     "img": "ppl/seth.jpeg",
     "bio": "Hi, I'm Seth, a Poly 2 student from SP.",
-    "lead": true
+    "lead": true,
+    "linkedin": "seth-yong-00672b229"
   },
   {
     "name": "Liu Wenkai",
@@ -914,7 +989,8 @@ const dev = [
     "level": "JC2",
     "img": "ppl/yuanxi.jpg",
     "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
-    "lead": true
+    "lead": true,
+    "linkedin": "yuan-xi-yap-5b3205242"
   },
   {
     "name": "Kabir Jain",
@@ -930,7 +1006,8 @@ const dev = [
     "github": "RottenLemons",
     "level": "JC1",
     "img": "ppl/mahir.png",
-    "bio": "NUSH student who likes CTFs, AI and C++. Games and dies in Physics sometimes."
+    "bio": "NUSH student who likes CTFs, AI and C++. Games and dies in Physics sometimes.",
+    "linkedin": "mahir-shah-681aa0261"
   },
   {
     "name": "Jed Lim",
@@ -946,7 +1023,8 @@ const dev = [
     "github": "Ishneet0710",
     "level": "JC2",
     "img": "ppl/ishneet.jpg",
-    "bio": "Hi, I'm Ishneet, a JC2 student from TJC."
+    "bio": "Hi, I'm Ishneet, a JC2 student from TJC.",
+    "linkedin": "ishneet-singh-a51697210"
   },
   {
     "name": "Wang Zerui",
@@ -954,7 +1032,8 @@ const dev = [
     "github": "theriseof9",
     "level": "Sec 4",
     "img": "ppl/zerui.jpg",
-    "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!"
+    "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!",
+    "linkedin": "wang-zerui-a21b41242"
   },
   {
     "name": "Ma Weiyi",
@@ -970,7 +1049,8 @@ const dev = [
     "github": "sawzedong",
     "level": "JC1",
     "img": "ppl/sawzedong.jpeg",
-    "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more"
+    "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more",
+    "linkedin": "ze-dong-saw-9b3936242"
   },
   {
     "name": "Cheong Jun Kai Harry",
@@ -978,7 +1058,8 @@ const dev = [
     "github": "Harry-cheong",
     "level": "JC1",
     "img": "ppl/harry.jpg",
-    "bio": "I'm Harry. I love tinkering with tech. I love card throwing."
+    "bio": "I'm Harry. I love tinkering with tech. I love card throwing.",
+    "linkedin": "harry-cheong-72bbb5212"
   },
   {
     "name": "Jerome Palayoor",
@@ -986,7 +1067,8 @@ const dev = [
     "github": "jeromepalayoor",
     "level": "JC1",
     "img": "ppl/Jerome_Palayoor.png",
-    "bio": "I love math and coding and recently picked up cyber security."
+    "bio": "I love math and coding and recently picked up cyber security.",
+    "linkedin": "jeromepalayoor"
   },
   {
     "name": "Daniel Chua Han",
@@ -1002,15 +1084,17 @@ const dev = [
     "github": "cytronicoder",
     "level": "Grade 9",
     "img": "ppl/Peter.jpeg",
-    "bio": "I'm a student developer currently studying in Singapore."
+    "bio": "I'm a student developer currently studying in Singapore.",
+    "linkedin": "cytronicoder"
   },
   {
     "name": "Raymond Goo",
     "school": "NP",
     "github": "provsalt",
-    "level": "Poly 3",
+    "level": "Poly 0",
     "img": "ppl/Raymond_goo.jpg",
-    "bio": "I like doing things and stuff software related."
+    "bio": "I like doing things and stuff software related.",
+    "linkedin": "raymond-goo"
   },
   {
     "name": "Ma Jinghong",
@@ -1018,7 +1102,8 @@ const dev = [
     "github": "",
     "level": "JC2",
     "img": "ppl/jinghong.jpg",
-    "bio": "I am a J2 student from HCI, and take PCME. I hope to help out for this event and learn relevant skills :)"
+    "bio": "I am a J2 student from HCI, and take PCME. I hope to help out for this event and learn relevant skills :)",
+    "linkedin": "ma-jinghong-a18b5022"
   },
   {
     "name": "Raj Harsh",
@@ -1026,7 +1111,8 @@ const dev = [
     "github": "Hars-raj",
     "level": "JC2",
     "img": "ppl/Raj Harsh.png",
-    "bio": "I am a JC2 student at YIJC, I take H2 computing and have an interest in programming and AI"
+    "bio": "I am a JC2 student at YIJC, I take H2 computing and have an interest in programming and AI",
+    "linkedin": "raj-harsh-b92931241"
   }
 ]
 
@@ -1038,7 +1124,8 @@ const ctf = [
     "level": "JC2",
     "img": "ppl/yuanxi.jpg",
     "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
-    "lead": true
+    "lead": true,
+    "linkedin": "yuan-xi-yap-5b3205242"
   },
   {
     "name": "Wang Zerui",
@@ -1046,7 +1133,8 @@ const ctf = [
     "github": "theriseof9",
     "level": "Sec 4",
     "img": "ppl/zerui.jpg",
-    "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!"
+    "bio": "Hi I'm Zerui from NUSH, I like CTFs and blahajs!",
+    "linkedin": "wang-zerui-a21b41242"
   },
   {
     "name": "Tan Junheng",
@@ -1054,7 +1142,8 @@ const ctf = [
     "github": "azazazo",
     "level": "Sec 4",
     "img": "ppl/Tan_Junheng.png",
-    "bio": "biggest blåhaj fan🦈❤️❤️ i like crypto(graphy) and sometimes play ctfs"
+    "bio": "biggest blåhaj fan🦈❤️❤️ i like crypto(graphy) and sometimes play ctfs",
+    "linkedin": "tan-junheng-776037131"
   },
   {
     "name": "Christian James Tan",
@@ -1070,7 +1159,8 @@ const ctf = [
     "github": "cryptoAlgorithm",
     "level": "Sec 4",
     "img": "ppl/",
-    "bio": "Hi, I'm Vincent, a Y4 student from NUSH"
+    "bio": "Hi, I'm Vincent, a Y4 student from NUSH",
+    "linkedin": "vincent-k-774963245"
   },
   {
     "name": "Jerome Palayoor",
@@ -1078,7 +1168,8 @@ const ctf = [
     "github": "jeromepalayoor",
     "level": "JC1",
     "img": "ppl/Jerome_Palayoor.png",
-    "bio": "I love math and coding and recently picked up cyber security."
+    "bio": "I love math and coding and recently picked up cyber security.",
+    "linkedin": "jeromepalayoor"
   },
   {
     "name": "Lim Sue Han Justin",
@@ -1093,7 +1184,8 @@ const ctf = [
     "school": "HCI",
     "github": "fishjojo1",
     "level": "JC2",
-    "img": "ppl/joeytang.jpeg"
+    "img": "ppl/joeytang.jpeg",
+    "linkedin": "fishjojo1"
   },
 ]
 
@@ -1105,7 +1197,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/zayan.jpg",
     "bio": "JC2 student from NUSH. PhD in rizzology from the Pete Davidson school of chasing tail.",
-    "conf": ["March", "FOSS", "June"]
+    "conf": ["March", "FOSS", "June"],
+    "linkedin": "karimi-zayan-1a64a8264"
   },
   {
     "name": "Jessie Chin Kit Hey",
@@ -1113,7 +1206,8 @@ const ws = [
     "github": "jcc-kh",
     "level": "JC2",
     "img": "ppl/jessie.jpg",
-    "conf": ["March"]
+    "conf": ["March"],
+    "linkedin": "jessie-chin-kh"
   },
   {
     "name": "Khoo Kai Wen",
@@ -1131,7 +1225,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/jinghong.jpg",
     "bio": "I am a J2 student from HCI, and take PCME. I hope to help out for this event and learn relevant skills :)",
-    "conf": ["March", "FOSS", "June"]
+    "conf": ["March", "FOSS", "June"],
+    "linkedin": "ma-jinghong-a18b5022"
   },
   {
     "name": "Ishneet Singh",
@@ -1140,7 +1235,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/ishneet.jpg",
     "bio": "Hi, I'm Ishneet, a JC2 student from TJC.",
-    "conf": ["March", "June"]
+    "conf": ["March", "June"],
+    "linkedin": "ishneet-singh-a51697210"
   },
   {
     "name": "Ian Goh",
@@ -1158,7 +1254,8 @@ const ws = [
     "level": "JC1",
     "img": "ppl/eugeneang.jpg",
     "bio": "Hi, I'm Eugene and i believe that caffeine is a miracle drug",
-    "conf": ["FOSS", "June"]
+    "conf": ["FOSS", "June"],
+    "linkedin": "eugene-ang-8ab711264"
   },
   {
     "name": "Dhanvine Rameshkumar",
@@ -1167,7 +1264,8 @@ const ws = [
     "github": "Dhanvine321",
     "img": "ppl/dhanvine.jpg",
     "bio": "Hi I'm Dhanvine, a Sec 4 student from TJC. I like to code AI and learn new things everyday!",
-    "conf": ["FOSS", "June"]
+    "conf": ["FOSS", "June"],
+    "linkedin": "dhanvine-rameshkumar"
   },
   {
     "name": "Elston Tan",
@@ -1176,7 +1274,8 @@ const ws = [
     "level": "Poly 2",
     "img": "ppl/elston.jpg",
     "bio": "Hello, I'm Elston. I love learning and playing around with AI, my favourite game is Sekiro.",
-    "conf": ["FOSS"]
+    "conf": ["FOSS"],
+    "linkedin": "elstuhn"
   },
   {
     "name": "Joey Tang",
@@ -1184,7 +1283,8 @@ const ws = [
     "github": "fishjojo1",
     "level": "JC2",
     "img": "ppl/joeytang.jpeg",
-    "conf": ["FOSS"]
+    "conf": ["FOSS"],
+    "linkedin": "fishjojo1"
   },
   {
     "name": "Yap Yuan Xi",
@@ -1193,7 +1293,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/yuanxi.jpg",
     "bio": "Hi, I'm Yuan Xi and I'm a JC2 student in NUSH. I like CTFing, IOing and Software Development.",
-    "conf": ["FOSS", "June", "September"]
+    "conf": ["FOSS", "June", "September"],
+    "linkedin": "yuan-xi-yap-5b3205242"
   },
   {
     "name": "Ashwin Lokesh",
@@ -1202,7 +1303,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/ashwin.jpg",
     "bio": "I am Ashwin.",
-    "conf": ["FOSS", "June"]
+    "conf": ["FOSS", "June"],
+    "linkedin": "ashwin-l-82968a202"
   },
   {
     "name": "Kabir Jain",
@@ -1220,7 +1322,8 @@ const ws = [
     "level": "JC1",
     "img": "ppl/mahir.png",
     "bio": "NUSH student who likes CTFs, AI and C++. Games and dies in Physics sometimes.",
-    "conf": ["FOSS", "June"]
+    "conf": ["FOSS", "June"],
+    "linkedin": "mahir-shah-681aa0261"
   },
   {
     "name": "Jed Lim",
@@ -1238,7 +1341,8 @@ const ws = [
     "img": "ppl/james_tan.png",
     "github": "Dragonslayer262",
     "bio": "I'm a JC2 student in RVHS. I mainly enjoy doing competitive programming and machine learning.",
-    "conf": ["June"]
+    "conf": ["June"],
+    "linkedin": "james-tan-dejun"
   },
   {
     "name": "Edwin Liew",
@@ -1265,7 +1369,8 @@ const ws = [
     "level": "Poly 2",
     "img": "ppl/seth.jpeg",
     "bio": "Hi, I'm Seth, a Poly 2 student from SP.",
-    "conf": ["June"]
+    "conf": ["June"],
+    "linkedin": "seth-yong-00672b229"
   },
   {
     "name": "Du Yuhan",
@@ -1274,7 +1379,8 @@ const ws = [
     "level": "Year 4",
     "img": "ppl/duyuhan.jpeg",
     "bio": "Year 4 student from MGS. Your average workaholic penguin and Red Dead Redemption 2 enjoyer.",
-    "conf": ["June", "September"]
+    "conf": ["June", "September"],
+    "linkedin": "yuhan-du-12p3ngu5"
   },
   {
     "name": "Ma Weiyi",
@@ -1292,7 +1398,8 @@ const ws = [
     "level": "JC1",
     "img": "ppl/sawzedong.jpeg",
     "bio": "Hi, i'm a JC1 student from Dunman High, interested in programming websites, trying out AI and more",
-    "conf": ["June", "September"]
+    "conf": ["June", "September"],
+    "linkedin": "ze-dong-saw-9b3936242"
   },
   {
     "name": "Cheong Jun Kai Harry",
@@ -1301,7 +1408,8 @@ const ws = [
     "level": "JC1",
     "img": "ppl/harry.jpg",
     "bio": "I'm Harry. I love tinkering with tech. I love card throwing.",
-    "conf": ["June", "September"]
+    "conf": ["June", "September"],
+    "linkedin": "harry-cheong-72bbb5212"
   },
   {
     "name": "Oon Zheng Kang",
@@ -1309,9 +1417,6 @@ const ws = [
     "github": "ozk100",
     "level": "JC1",
     "img": "ppl/Oon_Zheng_Kang.jpg",
-    "comms": [
-      "HR"
-    ],
     "bio": "Hi, I'm Zheng Kang, a JC1 student from DHS.",
     "conf": ["September"]
   },
@@ -1334,6 +1439,16 @@ const ws = [
     "conf": ["September"]
   },
   {
+    "name": "Zeyu Yao (Peter)",
+    "school": "SAIS",
+    "github": "cytronicoder",
+    "level": "Grade 9",
+    "img": "ppl/Peter.jpeg",
+    "bio": "I'm a student developer currently studying in Singapore.",
+    "linkedin": "cytronicoder",
+    "conf": ["September"]
+  },
+  {
     "name": "Neil Bhandari",
     "school": "VJC",
     "level": "JC1",
@@ -1349,7 +1464,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/cervon.jpg",
     "bio": "Hi, I'm Cervon, JC2 student from NUSH! AI, Robotics and Linguistics nerd 😎",
-    "conf": ["September"]
+    "conf": ["September"],
+    "linkedin": "cervonwong"
   },
   {
     "name": "Mayukh Das",
@@ -1366,7 +1482,8 @@ const ws = [
     "level": "JC2",
     "img": "ppl/Lee I-Shiang.jpeg",
     "bio": "Hi, I'm I-Shiang :P I like coding, chemistry, and cheese.",
-    "conf": ["September"]
+    "conf": ["September"],
+    "linkedin": "lee-i-shiang"
   },
   {
     "name": "Jerome Palayoor",
@@ -1375,7 +1492,8 @@ const ws = [
     "level": "JC1",
     "img": "ppl/Jerome_Palayoor.png",
     "bio": "I love math and coding and recently picked up cyber security.",
-    "conf": ["December"]
+    "conf": ["December"],
+    "linkedin": "jeromepalayoor"
   },
 ]
 
