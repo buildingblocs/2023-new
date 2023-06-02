@@ -1208,8 +1208,8 @@ const ctf = [
     "school": "NUSH",
     "github": "jun-lsh",
     "level": "JC2",
-    "img": "ppl/",
-    "bio": "Hi, I'm Justin, a Y6 student from NUS High."
+    "img": "ppl/justin_lim.jpg",
+    "bio": "hi I'm Justin Lim from NUSH, I like rev and pwn lots. excessive user of :slight_smile:"
   },
   {
     "name": "Joey Tang",
