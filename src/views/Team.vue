@@ -1209,7 +1209,7 @@ const ctf = [
     "github": "jun-lsh",
     "level": "JC2",
     "img": "ppl/justin_lim.jpg",
-    "bio": "hi I'm Justin Lim from NUSH, I like rev and pwn lots. excessive user of :slight_smile:"
+    "bio": "hi I'm Justin Lim from NUSH, I like rev and pwn lots. excessive user of the :slight_smile: emoji"
   },
   {
     "name": "Joey Tang",
