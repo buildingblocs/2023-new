@@ -1180,8 +1180,8 @@ const ctf = [
     "school": "NUSH",
     "github": "Xenon1345",
     "level": "Sec 4",
-    "img": "ppl/",
-    "bio": "Hi, I'm Christian, a Y4 student from NUSH"
+    "img": "ppl/christian.jpg",
+    "bio": "ctf player, crypto and rev enthusiast and blåhaj's second biggest fan 🦈"
   },
   {
     "name": "Vincent Kwok",
