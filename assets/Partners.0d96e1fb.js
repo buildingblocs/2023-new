@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as r,x as t}from"./index.8b18e3c6.js";const o={},s={class:"about"};function c(a,n){return r(),t("div",s,"Partners page")}const i=e(o,[["render",c]]);export{i as default};

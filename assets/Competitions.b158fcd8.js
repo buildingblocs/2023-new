@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,x as e}from"./index.8b18e3c6.js";const s={},c={class:"about"};function n(r,a){return t(),e("div",c,"Competitions page")}const m=o(s,[["render",n]]);export{m as default};
