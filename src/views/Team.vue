@@ -665,8 +665,8 @@ const qa = [
     "school": "VJC",
     "github": "hninsatphyusin",
     "level": "JC2",
-    "img": "ppl/",
-    "bio": "I'm Hnin, a student with a burning passion for technology.",
+    "img": "ppl/hnin.jpg",
+    "bio": "🤡",
     "linkedin": "hnin-sat-phyu-sin-54344b265"
   },
   {
@@ -718,6 +718,14 @@ const qa = [
     "img": "ppl/zhang_xiyuan.jpg",
     "bio": "Hi im Xiyuan from VJC!!! I luv coffee, running, math & programming. Curious&Learn&Enjoy@BBCS2023",
     "linkedin": "xiyuan-zhang-b819a7242"
+  },
+  {
+    "name": "Hugo Maximus Lim",
+    "school": "NUSH",
+    "github": "cakular",
+    "level": "JC1",
+    "img": "ppl/hugo.jpg",
+    "bio": "Hi, I'm Hugo, a JC1 student from NUSH.",
   }
 ]
 
@@ -1445,6 +1453,25 @@ const ws = [
     "linkedin": "harry-cheong-72bbb5212"
   },
   {
+    "name": "Liu Wenkai",
+    "school": "NUSH",
+    "github": "squi-ddy",
+    "level": "JC1",
+    "img": "ppl/wenkai.jpg",
+    "bio": "Hi, I'm Wenkai, a JC1 student from NUSH.",
+    "website": "https://squiddy.me/",
+    "conf": ["June", "September"]
+  },
+  {
+    "name": "Hugo Maximus Lim",
+    "school": "NUSH",
+    "github": "cakular",
+    "level": "JC1",
+    "img": "ppl/hugo.jpg",
+    "bio": "Hi, I'm Hugo, a JC1 student from NUSH.",
+    "conf": ["June", "September"]
+  },
+  {
     "name": "Oon Zheng Kang",
     "school": "DHS",
     "github": "ozk100",
@@ -1460,16 +1487,6 @@ const ws = [
     "level": "JC1",
     "img": "ppl/Chee_Justin.jpg",
     "bio": "Hi I'm Justin, a JC1 computing student in DHS who also likes playing guitar",
-    "conf": ["September"]
-  },
-  {
-    "name": "Liu Wenkai",
-    "school": "NUSH",
-    "github": "squi-ddy",
-    "level": "JC1",
-    "img": "ppl/wenkai.jpg",
-    "bio": "Hi, I'm Wenkai, a JC1 student from NUSH.",
-    "website": "https://squiddy.me/",
     "conf": ["September"]
   },
   {
@@ -1577,6 +1594,14 @@ const organisers = [
   //   "img": "ppl/Dylan_Alden_Kusbiyantoro.jpg",
   //   "bio": "I'm a JC student passionate in web development, artificial intelligence, game design, and robotics"
   // },
+  {
+    "name": "Jiang Tongyu",
+    "school": "RI",
+    "github" : "",
+    "level": "JC1",
+    "img": "ppl/",
+    "bio": "I'm a JC1 student from Raffles Institution! I like making music, crafts, writing, and coding games or websites. Also I am a fish :)"
+  }
 
 
 ]//.sort((a, b) => a.school.localeCompare(b.school) || a.name.localeCompare(b.name))
